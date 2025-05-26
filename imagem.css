@@ -1,0 +1,28 @@
+@import url(root.css);
+
+.container__imagem {
+  border-radius: 50%;
+  border: 2px solid var(--rosa-escuro);
+  box-shadow: 0 0 10px var(--rosa-escuro);
+  height: 300px;
+  overflow: hidden;
+  padding: 8px;
+  width: 300px;
+  animation: brilhar 2s infinite ease-in-out;
+  justify-self: end; /* faz a imagem ir para a direita no grid */
+  margin: 0; /* remove margens para alinhar melhor */
+}
+
+.container__imagem img {
+  border-radius: 50%;
+  display: block;
+  filter: grayscale(100%);
+  height: 100%;
+  object-fit: cover;
+  transition: filter 0.5s ease;
+  width: 100%;
+}
+
+.container__imagem img:hover {
+  filter: grayscale(0%);
+}
