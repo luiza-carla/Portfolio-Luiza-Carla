@@ -13,7 +13,14 @@ html {
   scroll-behavior: smooth;
 }
 
-.container {
+.container-personalizado {
   height: 100vh;
   margin: 3em;
+}
+
+.divisor {
+  border: none;
+  border-top: 1px solid var(--rosa-claro);
+  width: 100%;
+  margin: 2rem 0;
 }

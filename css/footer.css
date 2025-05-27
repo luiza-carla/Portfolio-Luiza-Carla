@@ -2,8 +2,8 @@
   background: linear-gradient(to left, var(--rosa-claro), var(--rosa-escuro));
   color: white;
   text-align: center;
-  padding: 20px 20px;
-  font-size: 1rem;
+  padding: 20px;
+  font-size: 18px;
   margin-top: 60px;
 }
 
@@ -19,4 +19,19 @@
 
 #footer p {
   margin: 8px 0;
+  font-size: 15px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 10px 0;
+}
+
+.footer-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }

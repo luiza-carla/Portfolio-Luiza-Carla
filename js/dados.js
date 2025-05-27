@@ -13,12 +13,15 @@ async function carregarDados() {
       formacao.cursos.forEach(curso => {
         const cursoElemento = document.createElement('div');
         cursoElemento.classList.add('curso');
+
         cursoElemento.innerHTML = `
           <p><strong>${curso.nome}</strong><br>
-          Concluído em: ${curso.conclusao}<br>
-          Carga horária: ${curso.cargaHoraria}<br>
-          Instituição: ${curso.instituicao}</p>
+          Instituição: ${curso.instituicao}<br>
+          ${curso.cargaHoraria ? `Carga horária: ${curso.cargaHoraria}<br>` : ''}
+          ${curso.conclusao ? `Concluído em: ${curso.conclusao}<br>` : ''}
+          </p>
         `;
+
         formacaoElemento.appendChild(cursoElemento);
       });
 
@@ -26,16 +29,45 @@ async function carregarDados() {
     });
 
     const cursosIndepDiv = document.getElementById('cursosIndependentes');
+
+function parseData(dataString) {
+  if (!dataString) return new Date(0);
+
+  const partes = dataString.split('-');
+
+  if (partes.length === 2) {
+    const [mes, ano] = partes;
+    return new Date(`${ano}-${mes}-01`);
+  }
+
+  if (partes.length === 3) {
+    const [dia, mes, ano] = partes;
+    return new Date(`${ano}-${mes}-${dia}`);
+  }
+
+  return new Date(dataString);
+}
+
+dados.cursosIndependentes.sort((a, b) => {
+  const dataA = parseData(a.conclusao || a["conclusão"]);
+  const dataB = parseData(b.conclusao || b["conclusão"]);
+  return dataA - dataB;
+});
+
+
     dados.cursosIndependentes.forEach(curso => {
       const cursoElemento = document.createElement('div');
       cursoElemento.classList.add('curso-independente');
 
       cursoElemento.innerHTML = `
         <h3>${curso.nome}</h3>
-        <p>Concluído em: ${curso.conclusao}<br>
-        Carga horária: ${curso.cargaHoraria}<br>
-        Instituição: ${curso.instituicao}</p>
+        <p> 
+          Instituição: ${curso.instituicao}<br>
+          ${curso.cargaHoraria ? `Carga horária: ${curso.cargaHoraria}<br>` : ''}
+          ${curso.conclusao ? `Concluído em: ${curso.conclusao}<br>` : ''}
+        </p>
       `;
+
 
       cursosIndepDiv.appendChild(cursoElemento);
     });

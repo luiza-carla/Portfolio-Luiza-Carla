@@ -20,7 +20,7 @@
                 "JavaScript"
             ],
             "imagem": "../img/exemplo.png",
-            "responsabilidades": "Desenvolvimento do Front-End",
+            "responsabilidades": "Desenvolvimento do front-end.",
             "status": "Finalizado",
             "link": "https://github.com/isaquesv/assistenteVirtualEducacionalSIGA"
         },
@@ -42,11 +42,12 @@
                 "Chalk",
                 "Redis",
                 "Dotenv",
-                "HTTPS"
+                "HTTPS",
+                "NPM"
             ],
             "imagem": "../img/exemplo.png",
-            "responsabilidades": "Desenvolvimento do modelo lógico de dados e tabelas do banco de dados, back-end de login, cadastro, perfil e editar perfil, e front-end",
-            "status": "Em desenvolvimento",
+            "responsabilidades": "Desenvolvimento do modelo lógico de dados e tabelas do banco de dados, back-end de login, cadastro, perfil e editar perfil, permissões de administrador e front-end.",
+            "status": "Em andamento",
             "link": "https://github.com/ruann-fernandess/Radar_Praia-Grande"
         }
     ]

@@ -1,6 +1,36 @@
 {
   "formacoes": [
     {
+      "nome": "A partir do zero: iniciante em programação",
+      "cargaHoraria": "31h",
+      "cursos": [
+        {
+          "nome": "Lógica de programação: mergulhe em programação com JavaScript",
+          "conclusao": "14-10-2024",
+          "cargaHoraria": "6h",
+          "instituicao": "Alura"
+        },
+        {
+          "nome": "Lógica de programação: explore funções e listas",
+          "conclusao": "15-10-2024",
+          "cargaHoraria": "6h",
+          "instituicao": "Alura"
+        },
+        {
+          "nome": "Git e GitHub: compartilhando e colaborando em projetos",
+          "conclusao": "18-10-2024",
+          "cargaHoraria": "8h",
+          "instituicao": "Alura"
+        },
+        {
+          "nome": "Lógica de programação: praticando com desafios",
+          "conclusao": "19-10-2024",
+          "cargaHoraria": "8h",
+          "instituicao": "Alura"
+        }
+      ]
+    },
+    {
       "nome": "Aprenda a programar em JavaScript com foco no back-end",
       "cargaHoraria": "44h",
       "cursos": [
@@ -31,36 +61,6 @@
         {
           "nome": "JavaScript: programação Orientada a Objetos",
           "conclusao": "02-05-2025",
-          "cargaHoraria": "8h",
-          "instituicao": "Alura"
-        }
-      ]
-    },
-    {
-      "nome": "A partir do zero: iniciante em programação",
-      "cargaHoraria": "31h",
-      "cursos": [
-        {
-          "nome": "Lógica de programação: mergulhe em programação com JavaScript",
-          "conclusao": "14-10-2024",
-          "cargaHoraria": "6h",
-          "instituicao": "Alura"
-        },
-        {
-          "nome": "Lógica de programação: explore funções e listas",
-          "conclusao": "15-10-2024",
-          "cargaHoraria": "6h",
-          "instituicao": "Alura"
-        },
-        {
-          "nome": "Git e GitHub: compartilhando e colaborando em projetos",
-          "conclusao": "18-10-2024",
-          "cargaHoraria": "8h",
-          "instituicao": "Alura"
-        },
-        {
-          "nome": "Lógica de programação: praticando com desafios",
-          "conclusao": "19-10-2024",
           "cargaHoraria": "8h",
           "instituicao": "Alura"
         }
@@ -169,6 +169,35 @@
       "conclusao": "23-05-2025",
       "cargaHoraria": "8h",
       "instituicao": "Alura"
-    }
+    },
+  {
+    "nome": "Design e Photoshop",
+    "conclusao": "06-2020",
+    "cargaHoraria": "16h",
+    "instituicao": "Centro Paula Souza"
+  },
+  {
+    "nome": "IT Essentials: PC Hardware and Software",
+    "conclusao": "04-2023",
+    "instituicao": "CISCO"
+  },
+  {
+    "nome": "Fundamentos de Engenharia de Dados",
+    "conclusao": "09-2024",
+    "cargaHoraria": "24h",
+    "instituicao": "Data Science Academy"
+  },
+  {
+    "nome": "Banco de Dados",
+    "conclusao": "12-2024",
+    "cargaHoraria": "90h",
+    "instituicao": "Oracle Academy"
+  },
+  {
+    "nome": "Microsoft Power BI para Business Intelligence e Data Science",
+    "conclusao": "19-05-2025",
+    "cargaHoraria": "72h",
+    "instituicao": "Data Science Academy"
+  }
   ]
 }

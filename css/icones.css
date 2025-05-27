@@ -1,5 +1,3 @@
-
-
 .icones {
   display: flex;
   flex-wrap: wrap;
@@ -8,6 +6,7 @@
   justify-content: center;
   background: linear-gradient(to bottom, var(--rosa-claro), var(--rosa-escuro));
   border-radius: 16px;
+    margin-top: 30px;
 }
 
 .icones > div {
@@ -23,8 +22,7 @@
 }
 
 .icones > div::before {
-  content: attr(class);
-  text-transform: capitalize;
+  content: attr(data-title);
   font-weight: bold;
   margin-bottom: 0.5rem;
   font-size: 1rem;
@@ -44,8 +42,10 @@
 
 .tooltip {
   position: relative;
+  display: inline-block; /* ESSENCIAL para SVG */
 }
 
+/* o resto igual */
 .tooltip::after {
   content: attr(data-tooltip);
   position: absolute;
@@ -58,6 +58,7 @@
   border-radius: 7px;
   white-space: nowrap;
   font-size: 10px;
+  font-weight: 700;
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.2s ease-in-out;
@@ -67,4 +68,23 @@
 
 .tooltip:hover::after {
   opacity: 1;
+}
+
+
+.habilidades h1{
+  text-align: center;
+}
+
+.svg-icon {
+  width: 50px;
+  height: 50px;
+  color: var(--rosa-escuro);
+  cursor: pointer;
+  transition: transform 0.3s, color 0.3s;
+  fill: currentColor; /* para o SVG herdar a cor */
+}
+
+.svg-icon:hover {
+  transform: scale(1.5);
+  color: var(--preto);
 }

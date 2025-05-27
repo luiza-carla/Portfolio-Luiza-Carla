@@ -16,17 +16,17 @@
       <ul class="navbar__lista">
         <li><a href="#inicio">Início</a></li>
         <li><a href="#habilidades">Habilidades</a></li>
-        <li><a href="#cursos">Cursos</a></li>
+        <li><a href="#cursos">Certificados</a></li>
         <li><a href="#projetos">Projetos</a></li>
         <li><a href="#footer">Contato</a></li>
       </ul>
     </nav>
 
     <main>
-      <section class="container principal" id="inicio">
+      <section class="container-personalizado principal" id="inicio">
         <div class="principal__texto">
           <p>
-            Sou desenvolvedora em formação com interesse no desenvolvimento fullstack e arquitetura de dados, atualmente no último ano do curso de Análise e Desenvolvimento de Sistemas na FATEC de Praia Grande.
+            Meu nome é Luiza Carla Simões dos Santos. Sou desenvolvedora em formação com interesse no desenvolvimento fullstack e arquitetura de dados, atualmente no último ano do curso de Análise e Desenvolvimento de Sistemas na FATEC de Praia Grande.
           </p>
           <p>
             Tenho buscado constantemente aprimorar meus conhecimentos por meio de cursos, projetos acadêmicos e o desenvolvimento do meu TCC, com foco em boas práticas e arquitetura de software.
@@ -44,10 +44,11 @@
           <img src="../img/icon.png" alt="Luiza Carla" />
         </div>
       </section>
-
-      <section class="container habilidades" id="habilidades">
+<hr class="divisor"/>
+      <section class="container-personalizado habilidades" id="habilidades">
+        <h1>Habilidades</h1>
           <div class="icones">
-            <div class="ferramentas">
+            <div class="ferramentas" data-title="Ferramentas">
               <i class="devicon-git-plain tooltip" data-tooltip="Git"></i>
               <i class="devicon-github-original tooltip" data-tooltip="GitHub"></i>
               <i class="devicon-vscode-plain tooltip" data-tooltip="VS Code"></i>
@@ -55,50 +56,73 @@
               <i class="devicon-linux-plain tooltip" data-tooltip="Linux"></i>
               <i class="devicon-eslint-plain tooltip" data-tooltip="ESLint"></i>
             </div>
-            <div class="front-end">
+            <div class="front-end" data-title="Front-end">
               <i class="devicon-html5-plain tooltip" data-tooltip="HTML5"></i>
               <i class="devicon-css3-plain tooltip" data-tooltip="CSS3"></i>
               <i class="devicon-javascript-plain tooltip" data-tooltip="JavaScript"></i>
             </div>
-            <div class="back-end">
+            <div class="back-end" data-title="Back-end">
               <i class="devicon-nodejs-plain tooltip" data-tooltip="Node.js"></i>
               <i class="devicon-express-original tooltip" data-tooltip="Express"></i>
               <i class="devicon-python-plain tooltip" data-tooltip="Python"></i>
               <i class="devicon-django-plain tooltip" data-tooltip="Django"></i>
               <i class="devicon-sequelize-plain tooltip" data-tooltip="Sequelize"></i>
             </div>
-            <div class="dados">
+            <div class="dados" data-title="Dados">
               <i class="devicon-sqlite-plain tooltip" data-tooltip="SQLite"></i>
               <i class="devicon-mongodb-plain-wordmark tooltip" data-tooltip="MongoDB"></i>
+              <div class="tooltip svg-icon" data-tooltip="Power BI">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="50" height="50"
+                viewBox="0 0 50 50"
+                fill="currentColor">
+                <path d="M 8 7 C 4.69 7 2 9.69 2 13 L 2 33 C 2 35.97 4.16 38.440156 7 38.910156 L 7 36.869141 C 5.27 36.429141 4 34.86 4 33 L 4 13 C 4 10.79 5.79 9 8 9 L 41 9 C 43.21 9 45 10.79 45 13 L 45 33 C 45 34.86 43.73 36.429141 42 36.869141 L 42 38.910156 C 44.84 38.440156 47 35.97 47 33 L 47 13 C 47 9.69 44.31 7 41 7 L 8 7 z M 36.5 15 C 35.119 15 34 16.119 34 17.5 L 34 41.5 C 34 42.881 35.119 44 36.5 44 C 37.881 44 39 42.881 39 41.5 L 39 17.5 C 39 16.119 37.881 15 36.5 15 z M 20.5 21 C 19.119 21 18 22.119 18 23.5 L 18 41.5 C 18 42.881 19.119 44 20.5 44 C 21.881 44 23 42.881 23 41.5 L 23 23.5 C 23 22.119 21.881 21 20.5 21 z M 28.5 25 C 27.119 25 26 26.119 26 27.5 L 26 41.5 C 26 42.881 27.119 44 28.5 44 C 29.881 44 31 42.881 31 41.5 L 31 27.5 C 31 26.119 29.881 25 28.5 25 z M 12.5 30 C 11.119 30 10 31.119 10 32.5 L 10 41.5 C 10 42.881 11.119 44 12.5 44 C 13.881 44 15 42.881 15 41.5 L 15 32.5 C 15 31.119 13.881 30 12.5 30 z"></path>
+              </svg>
             </div>
-            <div class="testes-api">
+            </div>
+            <div class="testes-api" data-title="Testes de API">
               <i class="devicon-postman-plain tooltip" data-tooltip="Postman"></i>
               <i class="devicon-insomnia-plain tooltip" data-tooltip="Insomnia"></i>
             </div>
         </div>
       </section>
-
+<hr class="divisor"/>
       <section class="cursos" id="cursos">
         <h1>Formações</h1>
         <div id="formacoes"></div>
         <h1 id="cursoTitulo">Cursos</h1>
         <div id="cursosIndependentes"></div>
       </section>
-
+<hr class="divisor"/>
       <section class="projetos" id="projetos">
         <h1>Projetos</h1>
         <div id="projetos-container"></div>
       </section>
     </main>
 
-    <footer id="footer">
-      <p><strong>Entre em contato:</strong></p>
-      <p>Email: <a href="mailto:luizacarla2004@gmail.com">luizacarla2004@gmail.com</a></p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/luiza-carla-sim%C3%B5es-dos-santos/" target="_blank" rel="noopener noreferrer">linkedin.com/in/luiza-carla-simões-dos-santos</a></p>
-      <p>GitHub: <a href="https://github.com/luizacarla" target="_blank" rel="noopener noreferrer">github.com/luizacarla</a></p>
-      <p>© 2025 Luiza Carla. Todos os direitos reservados.</p>
-    </footer>
+<footer id="footer">
+  <div class="footer-links">
+    <div class="footer-item">
+      <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+        <title>Gmail</title>
+        <path fill="white" d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/>
+      </svg>
+      <a href="mailto:luizacarla2004@gmail.com">luizacarla2004@gmail.com</a>
+    </div>
 
+    <div class="footer-item">
+      <i class="devicon-linkedin-plain"></i>
+      <a href="https://www.linkedin.com/in/luiza-carla" target="_blank" rel="noopener noreferrer">luiza-carla</a>
+    </div>
+
+    <div class="footer-item">
+      <i class="devicon-github-original"></i>
+      <a href="https://github.com/luiza-carla" target="_blank" rel="noopener noreferrer">luiza-carla</a>
+    </div>
+  </div>
+  <p>© 2025 Luiza Carla. Todos os direitos reservados.</p>
+</footer>
     <script src="../js/dados.js"></script>
   </body>
 </html>
