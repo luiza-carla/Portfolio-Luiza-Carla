@@ -76,6 +76,7 @@ dados.cursosIndependentes.sort((a, b) => {
     console.error('Erro ao carregar dados:', erro);
   }
 
+  //projetos
 fetch('../projetos.json')
   .then(res => res.json())
   .then(data => {
@@ -84,8 +85,8 @@ fetch('../projetos.json')
       const div = document.createElement('div');
       div.classList.add('projeto');
 
-      // Monta as tags de tecnologias
       const tecnologiasHTML = projeto.tecnologias
+        .sort((a, b) => a.localeCompare(b))
         .map(tecnologia => `<span class="tag-tecnologia">${tecnologia}</span>`)
         .join(' ');
 
