@@ -44,7 +44,7 @@
                 "HTTPS",
                 "NPM"
             ],
-            "imagem": "../assets/img/radarpg.png",
+            "imagem": "assets/img/radarpg.png",
             "responsabilidades": "Desenvolvimento do modelo lógico de dados e tabelas do banco de dados, back-end de login, cadastro, perfil e editar perfil, permissões de administrador, sessão do usuário e front-end.",
             "status": "Em andamento",
             "link": "https://github.com/ruann-fernandess/Radar_Praia-Grande"
