@@ -16,7 +16,7 @@
 @media (max-width: 768px) {
   .principal{
     display: flex;
-    flex-direction: column-reverse; /* inverte a ordem */
+    flex-direction: column-reverse; 
   }
 }
 

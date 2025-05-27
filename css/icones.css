@@ -42,10 +42,9 @@
 
 .tooltip {
   position: relative;
-  display: inline-block; /* ESSENCIAL para SVG */
+  display: inline-block;
 }
 
-/* o resto igual */
 .tooltip::after {
   content: attr(data-tooltip);
   position: absolute;
@@ -81,7 +80,7 @@
   color: var(--rosa-escuro);
   cursor: pointer;
   transition: transform 0.3s, color 0.3s;
-  fill: currentColor; /* para o SVG herdar a cor */
+  fill: currentColor; 
 }
 
 .svg-icon:hover {

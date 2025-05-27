@@ -1,6 +1,6 @@
 async function carregarDados() {
   try {
-    const resposta = await fetch('../cursos.json');
+    const resposta = await fetch('../assets/data/cursos.json');
     const dados = await resposta.json();
 
     const formacoes = document.getElementById('formacoes');
@@ -77,7 +77,7 @@ dados.cursosIndependentes.sort((a, b) => {
   }
 
   //projetos
-fetch('../projetos.json')
+fetch('../assets/data/projetos.json')
   .then(res => res.json())
   .then(data => {
     const container = document.getElementById('projetos-container');
@@ -90,9 +90,11 @@ fetch('../projetos.json')
         .map(tecnologia => `<span class="tag-tecnologia">${tecnologia}</span>`)
         .join(' ');
 
+    const imgSrc = projeto.imagem && projeto.imagem.trim() !== '' ? projeto.imagem : '../assets/img/exemplo.png';
+
       div.innerHTML = `
         <h2>${projeto.nome}</h2>
-        <img src="${projeto.imagem}" alt="Imagem do projeto ${projeto.nome}" class="projeto-imagem">
+        <img src="${imgSrc}" alt="Imagem do projeto ${projeto.nome}" class="projeto-imagem">
         <p><strong>Descrição:</strong> ${projeto.descricao}</p>
         <p><strong>Tecnologias utilizadas:</strong> ${tecnologiasHTML}</p>
         <p><strong>Minhas responsabilidades:</strong> ${projeto.responsabilidades}</p>
@@ -100,6 +102,7 @@ fetch('../projetos.json')
         <p><a href="${projeto.link}" target="_blank" rel="noopener noreferrer">Ver projeto</a></p>
         <hr>
       `;
+
 
       container.appendChild(div);
     });

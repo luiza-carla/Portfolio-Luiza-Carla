@@ -19,7 +19,6 @@
                 "CSS",
                 "JavaScript"
             ],
-            "imagem": "../img/exemplo.png",
             "responsabilidades": "Desenvolvimento do front-end.",
             "status": "Finalizado",
             "link": "https://github.com/isaquesv/assistenteVirtualEducacionalSIGA"
@@ -45,7 +44,7 @@
                 "HTTPS",
                 "NPM"
             ],
-            "imagem": "../img/radarpg.png",
+            "imagem": "../assets/img/radarpg.png",
             "responsabilidades": "Desenvolvimento do modelo lógico de dados e tabelas do banco de dados, back-end de login, cadastro, perfil e editar perfil, permissões de administrador, sessão do usuário e front-end.",
             "status": "Em andamento",
             "link": "https://github.com/ruann-fernandess/Radar_Praia-Grande"
