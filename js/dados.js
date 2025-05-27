@@ -1,6 +1,6 @@
 async function carregarDados() {
   try {
-    const resposta = await fetch('../assets/data/cursos.json');
+    const resposta = await fetch('assets/data/cursos.json');
     const dados = await resposta.json();
 
     const formacoes = document.getElementById('formacoes');
@@ -77,7 +77,7 @@ dados.cursosIndependentes.sort((a, b) => {
   }
 
   //projetos
-fetch('../assets/data/projetos.json')
+fetch('assets/data/projetos.json')
   .then(res => res.json())
   .then(data => {
     const container = document.getElementById('projetos-container');
