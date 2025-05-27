@@ -58,9 +58,4 @@ button::after {
 
 button:hover::after {
   transform: translateX(-50%) scaleX(1);
-  background: var(--preto);
-}
-
-button:hover{
-  color: var(--preto);
 }

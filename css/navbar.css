@@ -45,10 +45,4 @@
 .navbar__lista li a:hover::after {
   transform: scaleX(1);
   transform-origin: left;
-   background: var(--preto);
-}
-
-.navbar__lista li a:hover {
-  color: var(--preto);
-  background: (--preto);
 }

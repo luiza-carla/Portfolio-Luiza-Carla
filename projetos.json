@@ -1,25 +1,53 @@
 {
     "projetos": [
         {
-            "nome": "exemplo",
-            "descricao": "exemplo",
-            "tecnologias": "exemplo",
-            "imagem": "imagem exemplo",
-            "link": "exemplo"
+            "nome": "Assistente Virtual Educacional SIGA",
+            "descricao": "Projeto desenvolvido durante as aulas ministradas pelo professor Ricardo Pupo Larguesa na matéria de Programação Orientada à Objetos (POO). Este projeto tem o objetivo de desenvolver um sistema integrado com a IA do Google (Gemini) responsável por oferecer suporte aos alunos que utilizam do “SIGA”, ajudando com o aprendizado e respondendo dúvidas atreladas às informações acadêmicas do aluno.",
+            "tecnologias": [
+                "Apache NetBeans 22",
+                "Jakarta EE 10 Web",
+                "Maven",
+                "JDK 19",
+                "Glassfish 7.0",
+                "SQLite",
+                "Gemini 1.5 Flash",
+                "HTMLUnit",
+                "Selenium",
+                "Bootstrap 5",
+                "Google Fonts",
+                "Ajax",
+                "CSS",
+                "JavaScript"
+            ],
+            "imagem": "../img/exemplo.png",
+            "responsabilidades": "Desenvolvimento do Front-End",
+            "status": "Finalizado",
+            "link": "https://github.com/isaquesv/assistenteVirtualEducacionalSIGA"
         },
         {
-            "nome": "exemplo",
-            "descricao": "exemplo",
-            "tecnologias": "exemplo",
-            "imagem": "imagem exemplo",
-            "link": "exemplo"
-        },
-        {
-            "nome": "exemplo",
-            "descricao": "exemplo",
-            "tecnologias": "exemplo",
-            "imagem": "imagem exemplo",
-            "link": "exemplo"
+            "nome": "Radar Praia Grande",
+            "descricao": "O Radar Praia Grande é uma plataforma colaborativa onde os cidadãos de Praia Grande podem reportar notícias, eventos e problemas locais, ampliando a visibilidade de acontecimentos que muitas vezes não recebem cobertura da mídia tradicional.",
+            "tecnologias": [
+                "JavaScript",
+                "Node.js",
+                "SQLite",
+                "Express",
+                "CORS",
+                "Postman",
+                "VS Code",
+                "Google Fonts",
+                "Multer",
+                "MemoryStore",
+                "Nodemon",
+                "Chalk",
+                "Redis",
+                "Dotenv",
+                "HTTPS"
+            ],
+            "imagem": "../img/exemplo.png",
+            "responsabilidades": "Desenvolvimento do modelo lógico de dados e tabelas do banco de dados, back-end de login, cadastro, perfil e editar perfil, e front-end",
+            "status": "Em desenvolvimento",
+            "link": "https://github.com/ruann-fernandess/Radar_Praia-Grande"
         }
     ]
 }

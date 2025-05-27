@@ -44,21 +44,30 @@ async function carregarDados() {
     console.error('Erro ao carregar dados:', erro);
   }
 
-  fetch('../projetos.json')
+fetch('../projetos.json')
   .then(res => res.json())
   .then(data => {
     const container = document.getElementById('projetos-container');
     data.projetos.forEach(projeto => {
       const div = document.createElement('div');
+      div.classList.add('projeto');
+
+      // Monta as tags de tecnologias
+      const tecnologiasHTML = projeto.tecnologias
+        .map(tecnologia => `<span class="tag-tecnologia">${tecnologia}</span>`)
+        .join(' ');
+
       div.innerHTML = `
         <h2>${projeto.nome}</h2>
+        <img src="${projeto.imagem}" alt="Imagem do projeto ${projeto.nome}" class="projeto-imagem">
         <p><strong>Descrição:</strong> ${projeto.descricao}</p>
-        <p><strong>Tecnologias:</strong> ${projeto.tecnologias}</p>
-        <p><a href="${projeto.link}" target="_blank">Ver projeto</a></p>
-        
+        <p><strong>Tecnologias utilizadas:</strong> ${tecnologiasHTML}</p>
+        <p><strong>Minhas responsabilidades:</strong> ${projeto.responsabilidades}</p>
+        <p><strong>Status:</strong> ${projeto.status}</p>
+        <p><a href="${projeto.link}" target="_blank" rel="noopener noreferrer">Ver projeto</a></p>
         <hr>
       `;
-      // falta servir as imagens e adicionar os links
+
       container.appendChild(div);
     });
   })

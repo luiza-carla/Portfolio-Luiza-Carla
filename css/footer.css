@@ -1,0 +1,22 @@
+#footer {
+  background: linear-gradient(to left, var(--rosa-claro), var(--rosa-escuro));
+  color: white;
+  text-align: center;
+  padding: 20px 20px;
+  font-size: 1rem;
+  margin-top: 60px;
+}
+
+#footer a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#footer a:hover {
+  text-decoration: underline;
+}
+
+#footer p {
+  margin: 8px 0;
+}

@@ -40,7 +40,7 @@
   padding: 10px;
   margin-bottom: 10px;
   color: var(--preto);
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   font-size: 0.9em;
 }
 
