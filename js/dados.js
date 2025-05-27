@@ -90,7 +90,7 @@ fetch('assets/data/projetos.json')
         .map(tecnologia => `<span class="tag-tecnologia">${tecnologia}</span>`)
         .join(' ');
 
-    const imgSrc = projeto.imagem && projeto.imagem.trim() !== '' ? projeto.imagem : '../assets/img/exemplo.png';
+    const imgSrc = projeto.imagem && projeto.imagem.trim() !== '' ? projeto.imagem : 'assets/img/exemplo.png';
 
       div.innerHTML = `
         <h2>${projeto.nome}</h2>
