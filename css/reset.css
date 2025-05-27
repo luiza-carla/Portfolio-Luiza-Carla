@@ -14,9 +14,14 @@ html {
 }
 
 .container-personalizado {
-  height: 100vh;
   margin: 3em;
 }
+
+@media (max-width: 768px) {
+    .container-personalizado{
+      margin: 1em;
+    }
+  }
 
 .divisor {
   border: none;

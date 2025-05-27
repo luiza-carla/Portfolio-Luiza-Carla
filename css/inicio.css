@@ -2,19 +2,27 @@
 .principal__texto h1{
     font-size: 25px;
     margin: 25px;
-}
-.principal__texto h2{
+} 
+ .principal__texto h2{
     font-size: 15px;
 }
 
 .principal {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  align-items: center; 
-  gap: 2em;
-  justify-items: center;
-  
+  display: block; 
+  margin-top: 20px;
 }
+
+@media (min-width: 768px) {
+  .principal {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center; 
+    gap: 2em;
+    justify-items: center;
+    margin-top: 120px;
+  }
+}
+
 
 .principal__texto {
   text-align: left;
