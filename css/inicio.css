@@ -10,6 +10,14 @@
 .principal {
   display: block; 
   margin-top: 20px;
+  
+}
+
+@media (max-width: 768px) {
+  .principal{
+    display: flex;
+    flex-direction: column-reverse; /* inverte a ordem */
+  }
 }
 
 @media (min-width: 768px) {
@@ -23,10 +31,12 @@
   }
 }
 
-
 .principal__texto {
   text-align: left;
-  padding-right: 0;
+}
+
+.principal a{
+  text-decoration: none;
 }
 
 .principal p{
