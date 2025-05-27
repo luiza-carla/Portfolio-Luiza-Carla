@@ -1,6 +1,6 @@
 .navbar {
-  background-color: transparent;
-  padding: 1em 2em;
+  background: linear-gradient(to right, var(--rosa-claro), var(--rosa-escuro));
+  padding: 0.5em 0;
   position: fixed;
   top: 0;
   left: 0;
@@ -18,13 +18,15 @@
 }
 
 
-.navbar__lista li a {
+.navbar__lista li a,
+.nome{
   color: white;
   display: block;
-  font-weight: bold;
   padding: 0.5em;
   position: relative;
   text-decoration: none;
+  font-weight: 700;
+  font-size: 20px;
 }
 
 .navbar__lista li a::after {
@@ -43,4 +45,10 @@
 .navbar__lista li a:hover::after {
   transform: scaleX(1);
   transform-origin: left;
+   background: var(--preto);
+}
+
+.navbar__lista li a:hover {
+  color: var(--preto);
+  background: (--preto);
 }

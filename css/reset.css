@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--rosa-clarissimo);
+  color: var(--preto);
+  font-family: var(--fonte-principal)
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  height: 100vh;
+  margin: 3em;
+}

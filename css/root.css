@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+:root {
+  --fonte-principal: 'Mulish';
+  --preto: #222222;
+  --rosa-clarissimo: #fff3e6;
+  --rosa-claro: #fdbdc4;
+  --rosa-medio: #fa87a1;
+  --rosa-escuro: #f8517f;
+}

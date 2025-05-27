@@ -1,0 +1,174 @@
+{
+  "formacoes": [
+    {
+      "nome": "Aprenda a programar em JavaScript com foco no back-end",
+      "cargaHoraria": "44h",
+      "cursos": [
+        {
+          "nome": "JavaScript: utilizando tipos, variáveis e funções",
+          "conclusao": "29-10-2024",
+          "cargaHoraria": "8h",
+          "instituicao": "Alura"
+        },
+        {
+          "nome": "JavaScript: conhecendo arrays",
+          "conclusao": "25-02-2025",
+          "cargaHoraria": "8h",
+          "instituicao": "Alura"
+        },
+        {
+          "nome": "JavaScript: conhecendo objetos",
+          "conclusao": "30-04-2025",
+          "cargaHoraria": "8h",
+          "instituicao": "Alura"
+        },
+        {
+          "nome": "JavaScript com Node.js: criando sua primeira biblioteca",
+          "conclusao": "01-05-2025",
+          "cargaHoraria": "10h",
+          "instituicao": "Alura"
+        },
+        {
+          "nome": "JavaScript: programação Orientada a Objetos",
+          "conclusao": "02-05-2025",
+          "cargaHoraria": "8h",
+          "instituicao": "Alura"
+        }
+      ]
+    },
+    {
+      "nome": "A partir do zero: iniciante em programação",
+      "cargaHoraria": "31h",
+      "cursos": [
+        {
+          "nome": "Lógica de programação: mergulhe em programação com JavaScript",
+          "conclusao": "14-10-2024",
+          "cargaHoraria": "6h",
+          "instituicao": "Alura"
+        },
+        {
+          "nome": "Lógica de programação: explore funções e listas",
+          "conclusao": "15-10-2024",
+          "cargaHoraria": "6h",
+          "instituicao": "Alura"
+        },
+        {
+          "nome": "Git e GitHub: compartilhando e colaborando em projetos",
+          "conclusao": "18-10-2024",
+          "cargaHoraria": "8h",
+          "instituicao": "Alura"
+        },
+        {
+          "nome": "Lógica de programação: praticando com desafios",
+          "conclusao": "19-10-2024",
+          "cargaHoraria": "8h",
+          "instituicao": "Alura"
+        }
+      ]
+    },
+    {
+      "nome": "Aprenda a programar em Python com Orientação a Objetos",
+      "cargaHoraria": "25h",
+      "cursos": [
+        {
+          "nome": "Python: crie a sua primeira aplicação",
+          "conclusao": "13-05-2025",
+          "cargaHoraria": "8h",
+          "instituicao": "Alura"
+        },
+        {
+          "nome": "Python: aplicando a Orientação a Objetos",
+          "conclusao": "13-05-2025",
+          "cargaHoraria": "6h",
+          "instituicao": "Alura"
+        },
+        {
+          "nome": "Python: avance na Orientação a Objetos e consuma API",
+          "conclusao": "13-05-2025",
+          "cargaHoraria": "8h",
+          "instituicao": "Alura"
+        }
+      ]
+    }
+  ],
+  "cursosIndependentes": [
+    {
+      "nome": "Django: templates e boas práticas",
+      "conclusao": "15-05-2025",
+      "cargaHoraria": "8h",
+      "instituicao": "Alura"
+    },
+    {
+      "nome": "Django: persistência de dados e Admin",
+      "conclusao": "16-05-2025",
+      "cargaHoraria": "10h",
+      "instituicao": "Alura"
+    },
+    {
+      "nome": "Node.js: lidando com buscas, filtros, paginação e erros em uma API",
+      "conclusao": "08-05-2025",
+      "cargaHoraria": "10h",
+      "instituicao": "Alura"
+    },
+    {
+      "nome": "Node.js: criando uma API Rest com Express e MongoDB",
+      "conclusao": "05-05-2025",
+      "cargaHoraria": "10h",
+      "instituicao": "Alura"
+    },
+    {
+      "nome": "Git e GitHub: dominando controle de versão de código",
+      "conclusao": "05-05-2025",
+      "cargaHoraria": "8h",
+      "instituicao": "Alura"
+    },
+    {
+      "nome": "HTML e CSS: praticando HTML/CSS",
+      "conclusao": "13-05-2025",
+      "cargaHoraria": "8h",
+      "instituicao": "Alura"
+    },
+    {
+      "nome": "HTML e CSS: ambientes de desenvolvimento, estrutura de arquivos e tags",
+      "conclusao": "12-05-2025",
+      "cargaHoraria": "8h",
+      "instituicao": "Alura"
+    },
+    {
+      "nome": "HTML e CSS: Classes, posicionamento e Flexbox",
+      "conclusao": "12-05-2025",
+      "cargaHoraria": "8h",
+      "instituicao": "Alura"
+    },
+    {
+      "nome": "HTTP: entendendo a web por baixo dos panos",
+      "conclusao": "02-05-2025",
+      "cargaHoraria": "10h",
+      "instituicao": "Alura"
+    },
+    {
+      "nome": "Windows Prompt: utilizando o CMD",
+      "conclusao": "20-05-2025",
+      "cargaHoraria": "8h",
+      "instituicao": "Alura"
+    },
+    {
+      "nome": "Terminal: aprenda comandos para executar tarefas",
+      "conclusao": "01-05-2025",
+      "cargaHoraria": "10h",
+      "instituicao": "Alura"
+    },
+    {
+      "nome": "Engenharia de Prompt: criando prompts eficazes para IA Generativa",
+      "conclusao": "23-05-2025",
+      "cargaHoraria": "6h",
+      "instituicao": "Alura"
+    },
+    {
+      "nome": "IA: explorando o potencial da inteligência artificial generativa",
+      "conclusao": "23-05-2025",
+      "cargaHoraria": "8h",
+      "instituicao": "Alura"
+    }
+  ]
+}

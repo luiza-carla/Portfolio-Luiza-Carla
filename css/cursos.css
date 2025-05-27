@@ -1,0 +1,74 @@
+#formacoes, #cursosIndependentes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin: 20px;
+  padding: 10px;
+}
+
+.formacao{
+  background: linear-gradient(to bottom, var(--rosa-escuro), var(--rosa-claro));
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(102, 65, 108, 0.2);
+  padding: 15px;
+  transition: transform 0.2s ease;
+}
+
+.curso-independente{
+  background: linear-gradient(to right, var(--rosa-medio), var(--rosa-escuro));
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(102, 65, 108, 0.2);
+  padding: 15px;
+  transition: transform 0.2s ease;
+}
+
+.formacao:hover, .curso-independente:hover {
+  transform: translateY(-5px);
+  background: var(--preto);
+}
+
+.formacao h2 {
+  margin-bottom: 12px;
+  color: white;
+  font-size: 1.3em;
+  text-align: center;
+}
+
+.curso {
+  background-color: var(--rosa-clarissimo);
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 10px;
+  color: var(--preto);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
+  font-size: 0.9em;
+}
+
+.curso p {
+  margin: 0;
+  line-height: 1.4;
+}
+
+.curso-independente h3 {
+  margin-top: 0;
+  margin-bottom: 8px;
+  color: white;
+  font-size: 1.1em;
+
+}
+
+.curso-independente p {
+  margin: 0;
+  color: white;
+  font-size: 0.9em;
+  line-height: 1.3;
+  font-weight: 500;
+}
+
+.cursos h1{
+text-align: center;
+}
+
+#cursoTitulo{
+    margin-top: 50px;
+}

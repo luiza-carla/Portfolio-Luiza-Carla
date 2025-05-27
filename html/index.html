@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfólio - Luiza Carla</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul class="navbar__lista">
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#cursos">Cursos</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section class="container principal" id="inicio">
+        <div class="principal__texto">
+          <p>
+            Sou desenvolvedora backend em formação com interesse no
+            desenvolvimento web e arquitetura de dados, atualmente no último ano
+            do curso de Análise e Desenvolvimento de Sistemas na FATEC de Praia
+            Grande.
+          </p>
+          <p>
+            Tenho buscado constantemente aprimorar meus conhecimentos por meio
+            de cursos, projetos acadêmicos e o desenvolvimento do meu TCC, com
+            foco em boas práticas e arquitetura de software.
+          </p>
+          <p>
+            Meu objetivo é crescer continuamente na área da tecnologia,
+            aprofundando meus conhecimentos em backend e banco de dados para me
+            tornar uma desenvolvedora cada vez mais completa.
+          </p>
+          <p>
+            Busco contribuir de forma positiva em projetos pessoais e
+            profissionais, sempre com foco na evolução constante e no
+            aprimoramento das minhas habilidades.
+          </p>
+          <button>Download CV</button>
+        </div>
+
+        <div class="container__imagem">
+          <img src="../img/icon.png" alt="Luiza Carla" />
+        </div>
+      </section>
+
+      <section class="container habilidades" id="habilidades">
+        <div class="habilidades__hard">
+          <div class="icones">
+            <div class="ferramentas">
+              <i class="devicon-git-plain tooltip" data-tooltip="Git"></i>
+              <i class="devicon-github-original tooltip" data-tooltip="GitHub"></i>
+              <i class="devicon-vscode-plain tooltip" data-tooltip="VS Code"></i>
+              <i class="devicon-npm-original-wordmark tooltip" data-tooltip="NPM"></i>
+              <i class="devicon-linux-plain tooltip" data-tooltip="Linux"></i>
+              <i class="devicon-eslint-plain tooltip" data-tooltip="ESLint"></i>
+            </div>
+            <div class="front-end">
+              <i class="devicon-html5-plain tooltip" data-tooltip="HTML5"></i>
+              <i class="devicon-css3-plain tooltip" data-tooltip="CSS3"></i>
+              <i class="devicon-javascript-plain tooltip" data-tooltip="JavaScript"></i>
+            </div>
+            <div class="back-end">
+              <i class="devicon-nodejs-plain tooltip" data-tooltip="Node.js"></i>
+              <i class="devicon-express-original tooltip" data-tooltip="Express"></i>
+              <i class="devicon-python-plain tooltip" data-tooltip="Python"></i>
+              <i class="devicon-django-plain tooltip" data-tooltip="Django"></i>
+              <i class="devicon-sequelize-plain tooltip" data-tooltip="Sequelize"></i>
+            </div>
+            <div class="dados">
+              <i class="devicon-sqlite-plain tooltip" data-tooltip="SQLite"></i>
+              <i class="devicon-mongodb-plain-wordmark tooltip" data-tooltip="MongoDB"></i>
+            </div>
+            <div class="testes-api">
+              <i class="devicon-postman-plain tooltip" data-tooltip="Postman"></i>
+              <i class="devicon-insomnia-plain tooltip" data-tooltip="Insomnia"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="cursos" id="cursos">
+        <h1>Formações</h1>
+        <div id="formacoes"></div>
+        <h1 id="cursoTitulo">Cursos</h1>
+        <div id="cursosIndependentes"></div>
+      </section>
+
+      <section class="projetos" id="projetos">
+        <h1>Projetos</h1>
+        <div id="projetos-container"></div>
+      </section>
+    </main>
+    <script src="../js/dados.js"></script>
+  </body>
+</html>

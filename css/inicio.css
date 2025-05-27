@@ -1,0 +1,66 @@
+
+.principal__texto h1{
+    font-size: 25px;
+    margin: 25px;
+}
+.principal__texto h2{
+    font-size: 15px;
+}
+
+.principal {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  align-items: center; 
+  gap: 2em;
+  justify-items: center;
+}
+
+.principal__texto {
+  text-align: left;
+  padding-right: 0;
+}
+
+.principal p{
+  font-family: var(--fonte-principal);
+  font-size: 17px;
+  font-weight: 600;
+  margin: 1em 0;
+}
+
+button {
+  margin-top: 1em;
+  position: relative;
+  background: linear-gradient(to right, var(--rosa-claro), var(--rosa-escuro));
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 20px;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  overflow: hidden;
+  display: block;
+  margin: 2em auto;
+}
+
+button::after {
+  content: '';
+  position: absolute;
+  bottom: 8px;
+  left: 50%;
+  transform: translateX(-50%) scaleX(0); 
+  width: 70%; 
+  height: 2px;
+  background: white;
+  transform-origin: center; 
+  transition: transform 0.3s ease-in-out;
+}
+
+button:hover::after {
+  transform: translateX(-50%) scaleX(1);
+  background: var(--preto);
+}
+
+button:hover{
+  color: var(--preto);
+}
