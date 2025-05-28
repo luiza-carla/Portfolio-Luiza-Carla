@@ -78,7 +78,6 @@
   width: 50px;
   height: 50px;
   color: var(--rosa-escuro);
-  cursor: pointer;
   transition: transform 0.3s, color 0.3s;
   fill: currentColor; 
 }
