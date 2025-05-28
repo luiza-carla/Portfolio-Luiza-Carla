@@ -42,4 +42,11 @@ function highlightCurrentSection() {
 
   window.addEventListener('scroll', highlightCurrentSection);
   highlightCurrentSection(); 
+
+  links.forEach(link => {
+  link.addEventListener('click', () => {
+    menu.classList.remove('active');
+  });
+});
+
 });
