@@ -29,3 +29,7 @@ html {
   width: 100%;
   margin: 2rem 0;
 }
+
+section[id], footer[id] {
+  scroll-margin-top: 80px;
+}
