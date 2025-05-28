@@ -13,12 +13,12 @@ html {
   scroll-behavior: smooth;
 }
 
-.container-personalizado {
+.container {
   margin: 3em;
 }
 
 @media (max-width: 768px) {
-    .container-personalizado{
+    .container{
       margin: 1em;
     }
   }

@@ -1,12 +1,3 @@
-
-.principal__texto h1{
-    font-size: 25px;
-    margin: 25px;
-} 
- .principal__texto h2{
-    font-size: 15px;
-}
-
 .principal {
   display: block; 
   margin-top: 20px;
