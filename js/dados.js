@@ -90,11 +90,13 @@ fetch('assets/data/projetos.json')
         .map(tecnologia => `<span class="tag-tecnologia">${tecnologia}</span>`)
         .join(' ');
 
-    const imgSrc = projeto.imagem && projeto.imagem.trim() !== '' ? projeto.imagem : 'assets/img/exemplo.png';
+      const imagemHTML = projeto.imagem && projeto.imagem.trim() !== ''
+        ? `<img src="${projeto.imagem}" alt="Imagem do projeto ${projeto.nome}" class="projeto-imagem">`
+        : '';
 
       div.innerHTML = `
         <h2>${projeto.nome}</h2>
-        <img src="${imgSrc}" alt="Imagem do projeto ${projeto.nome}" class="projeto-imagem">
+        ${imagemHTML}
         <p><strong>Descrição:</strong> ${projeto.descricao}</p>
         <p><strong>Tecnologias utilizadas:</strong> ${tecnologiasHTML}</p>
         <p><strong>Minhas responsabilidades:</strong> ${projeto.responsabilidades}</p>
@@ -102,7 +104,6 @@ fetch('assets/data/projetos.json')
         <p><a href="${projeto.link}" target="_blank" rel="noopener noreferrer">Ver projeto</a></p>
         <hr>
       `;
-
 
       container.appendChild(div);
     });
