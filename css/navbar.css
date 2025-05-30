@@ -1,5 +1,9 @@
+:root {
+  --gradiente-navbar: linear-gradient(to right, var(--rosa-claro), var(--rosa-escuro));
+}
+
 .navbar {
-  background: linear-gradient(to right, var(--rosa-claro), var(--rosa-escuro));
+  background: var(--gradiente-navbar);
   padding: 0.5em 0;
   position: fixed;
   top: 0;
@@ -19,13 +23,9 @@
   font-size: 1.3em; 
   color: var(--preto);
   cursor: pointer;
-  position: absolute;
-  margin-top: 140px;
-  right: 1em;
-  transform: translateY(-50%);
-  z-index: 1100; 
   border-radius: 50px;
   padding: 0.4em 0.6em;
+  z-index: 1100;
 }
 
 .navbar__lista {
@@ -35,28 +35,32 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  width: auto;
 }
 
 @media (max-width: 768px) {
-    .navbar{
-    background: transparent;
-    box-shadow: none;
+  .navbar {
+    justify-content: flex-end;
+      padding: 0.3em 0;
   }
+
   .navbar__toggle {
-    display: block; 
-}
+    display: block;
+    position: relative;
+    margin: 0 0.6em 0 0;
+  }
+
   .navbar__lista {
     display: none; 
     flex-direction: column;
-    background: linear-gradient(to right, var(--rosa-claro), var(--rosa-escuro));
+    background: var(--gradiente-navbar);
     position: fixed;
-    top: 0; 
+    top: 2em; 
     right: 0;
+    box-shadow: 0 4px 4px -2px rgba(0,0,0,0.2);
     width: 100%;
     padding: 1em 0;
-    margin: 0;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    z-index: 999;
+
   }
 
   .navbar__lista.active {
@@ -69,7 +73,7 @@
   }
 }
 
-.navbar__lista li a{
+.navbar__lista li a {
   color: white;
   display: block;
   padding: 0.5em;
@@ -80,22 +84,21 @@
 }
 
 .navbar__lista li a::after {
-  background: white;
-  bottom: 0;
   content: '';
-  height: 2px;
-  left: 0;
   position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: white;
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 0.3s ease-in-out;
-  width: 100%;
 }
 
 .navbar__lista li a:hover::after {
   transform: scaleX(1);
-  transform-origin: left;
-} 
+}
 
 .navbar__lista li a.active {
   background-color: rgba(255, 255, 255, 0.2);

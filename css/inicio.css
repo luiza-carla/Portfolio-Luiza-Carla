@@ -8,7 +8,9 @@
   .principal{
     display: flex;
     flex-direction: column-reverse; 
+    margin-top: 70px;
   }
+
 }
 
 @media (min-width: 768px) {

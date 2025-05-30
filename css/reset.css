@@ -17,12 +17,6 @@ html {
   margin: 3em;
 }
 
-@media (max-width: 768px) {
-    .container{
-      margin: 1em;
-    }
-  }
-
 .divisor {
   border: none;
   border-top: 1px solid var(--rosa-claro);
@@ -31,7 +25,10 @@ html {
 }
 
 @media (max-width: 768px) {
-  section[id], footer[id] {
+    .container{
+      margin: 1em;
+    }
+    section[id], footer[id] {
     scroll-margin-top: 120px;
   }
 }
