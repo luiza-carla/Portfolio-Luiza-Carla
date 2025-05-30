@@ -2,7 +2,7 @@
     "projetos": [
         {
             "nome": "Assistente Virtual Educacional SIGA",
-            "descricao": "Projeto desenvolvido durante as aulas ministradas pelo professor Ricardo Pupo Larguesa na matéria de Programação Orientada à Objetos (POO). Este projeto tem o objetivo de desenvolver um sistema integrado com a IA do Google (Gemini) responsável por oferecer suporte aos alunos que utilizam do “SIGA”, ajudando com o aprendizado e respondendo dúvidas atreladas às informações acadêmicas do aluno.",
+            "descricao": "Aviso: o site antigo do SIGA foi descontinuado, portanto o projeto não é mais possível de ser rodado ou visualizado. Projeto desenvolvido durante as aulas ministradas pelo professor Ricardo Pupo Larguesa na matéria de Programação Orientada à Objetos (POO). Este projeto tem o objetivo de desenvolver um sistema integrado com a IA do Google (Gemini) responsável por oferecer suporte aos alunos que utilizam do “SIGA”, ajudando com o aprendizado e respondendo dúvidas atreladas às informações acadêmicas do aluno.",
             "tecnologias": [
                 "Apache NetBeans 22",
                 "Jakarta EE 10 Web",
@@ -65,7 +65,7 @@
                 "Mongoose",
                 "VS Code"
             ],
-            "responsabilidades": "O projeto incluiu a criação de uma API com conexão ao banco de dados, criação de tabelas, integração com servidor local, tratamento de erros em arquivos separados, paginação e filtros de busca.",
+            "responsabilidades": "O projeto incluiu a criação de uma API com conexão ao banco de dados, criação de tabelas, CRUD, integração com servidor local, tratamento de erros em arquivos separados, paginação e filtros de busca.",
             "status": "Finalizado.",
             "link": "https://github.com/luiza-carla/Curso-Alura-Criando-API"
         }
