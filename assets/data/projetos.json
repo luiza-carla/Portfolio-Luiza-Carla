@@ -49,6 +49,25 @@
             "responsabilidades": "Desenvolvimento do modelo lógico de dados e tabelas do banco de dados, back-end de login, cadastro, perfil e editar perfil, permissões de administrador, sessão do usuário e front-end.",
             "status": "Em andamento...",
             "link": "https://github.com/ruann-fernandess/Radar_Praia-Grande"
+        },
+        {
+            "nome": "API de livros",
+            "descricao": "Projeto realizado nos cursos da Alura: \"criando uma API Rest com MongoDB e Express\", e \"lidando com buscas, filtros, paginação e erros em uma API\".",
+            "tecnologias": [
+                "Node.js",
+                "Nodemon",
+                "NPM",
+                "Dotenv",
+                "JavaScript",
+                "ESlint",
+                "MongoDB",
+                "Express",
+                "Mongoose",
+                "VS Code"
+            ],
+            "responsabilidades": "O projeto incluiu a criação de uma API com conexão ao banco de dados, criação de tabelas, integração com servidor local, tratamento de erros em arquivos separados, paginação e filtros de busca.",
+            "status": "Finalizado.",
+            "link": "https://github.com/luiza-carla/Curso-Alura-Criando-API"
         }
     ]
 }
