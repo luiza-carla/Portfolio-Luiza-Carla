@@ -31,7 +31,9 @@
         "Git",
         "GitHub",
         "Postman",
-        "Scrum" 
+        "Scrum", 
+        "Kanban",
+        "Docker"
       ]
     }
   ]

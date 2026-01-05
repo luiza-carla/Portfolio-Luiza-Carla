@@ -2,66 +2,64 @@ async function carregarDados() {
   try {
     // Busca o arquivo JSON com os dados de formações e cursos
     const resposta = await fetch('assets/data/cursos.json');
-    const dados = await resposta.json(); // Converte a resposta em objeto
+    const dados = await resposta.json();
 
-    const formacoes = document.getElementById('formacoes'); // Pega a div onde as formações vão ser colocadas
+    const formacoes = document.getElementById('formacoes');
 
     // Para cada formação no JSON
     dados.formacoes.forEach(formacao => {
-      const formacaoElemento = document.createElement('div'); // Cria um <div> pra essa formação
-      formacaoElemento.classList.add('formacao'); // Adiciona uma classe CSS
+      const formacaoElemento = document.createElement('div');
+      formacaoElemento.classList.add('formacao');
 
-      // Adiciona o nome da formação e carga horária no HTML do elemento
-      formacaoElemento.innerHTML = `<h2>${formacao.nome} (${formacao.cargaHoraria})</h2>`;
+      formacaoElemento.innerHTML = `
+        <h2>${formacao.nome} (${formacao.cargaHoraria})</h2>
+      `;
 
-      // Para cada curso dentro dessa formação
+      // Para cada curso dentro da formação
       formacao.cursos.forEach(curso => {
-        const cursoElemento = document.createElement('div'); // Cria um <div> pro curso
-        cursoElemento.classList.add('curso'); // Classe CSS
+        const cursoElemento = document.createElement('div');
+        cursoElemento.classList.add('curso');
 
-        // Preenche o HTML do curso com os dados disponíveis
         cursoElemento.innerHTML = `
-          <p><strong>${curso.nome}</strong><br>
-          Instituição: ${curso.instituicao}<br>
-          ${curso.cargaHoraria ? `Carga horária: ${curso.cargaHoraria}<br>` : ''}
-          ${curso.conclusao ? `Concluído em: ${curso.conclusao}<br>` : ''}
+          <p>
+            <strong>${curso.nome}</strong><br>
+            Instituição: ${curso.instituicao}<br>
+            ${curso.cargaHoraria ? `Carga horária: ${curso.cargaHoraria}<br>` : ''}
+            ${curso.conclusao ? `Concluído em: ${curso.conclusao}<br>` : ''}
           </p>
         `;
 
-        // Adiciona esse curso dentro da formação
         formacaoElemento.appendChild(cursoElemento);
       });
 
-      // Adiciona a formação inteira no DOM
       formacoes.appendChild(formacaoElemento);
     });
 
-    const cursosIndepDiv = document.getElementById('cursosIndependentes'); // Onde os cursos independentes serão exibidos
+    const cursosIndepDiv = document.getElementById('cursosIndependentes');
 
-    // Função auxiliar pra converter datas (dia-mes-ano ou mes-ano) em objetos Date
+    // Função auxiliar para converter datas
     function parseData(dataString) {
-      if (!dataString) return new Date(0); // Se não tiver data, retorna data "mínima"
-      // Separando dia, mês e ano das partes
+      if (!dataString) return new Date(0);
+
       const partes = dataString.split('-');
 
-      // Se tiver só duas partes, indicando que tem só mês e ano, ele retorna a data com um dia padrão (01)
       if (partes.length === 2) {
         const [mes, ano] = partes;
         return new Date(`${ano}-${mes}-01`);
       }
 
-      // Se a data estiver completa, retorna a data inteira
       if (partes.length === 3) {
         const [dia, mes, ano] = partes;
         return new Date(`${ano}-${mes}-${dia}`);
       }
+
       return new Date(dataString);
     }
 
-    // Ordena os cursos independentes por data de conclusão (mais antigos primeiro)
+    // Ordena cursos independentes por data
     dados.cursosIndependentes.sort((a, b) => {
-      const dataA = parseData(a.conclusao || a["conclusão"]);
-      const dataB = parseData(b.conclusao || b["conclusão"]);
+      const dataA = parseData(a.conclusao || a['conclusão']);
+      const dataB = parseData(b.conclusao || b['conclusão']);
       return dataA - dataB;
     });
 
@@ -72,43 +70,39 @@ async function carregarDados() {
 
       cursoElemento.innerHTML = `
         <h3>${curso.nome}</h3>
-        <p> 
+        <p>
           Instituição: ${curso.instituicao}<br>
           ${curso.cargaHoraria ? `Carga horária: ${curso.cargaHoraria}<br>` : ''}
           ${curso.conclusao ? `Concluído em: ${curso.conclusao}<br>` : ''}
         </p>
       `;
 
-      cursosIndepDiv.appendChild(cursoElemento); // Adiciona ao DOM
+      cursosIndepDiv.appendChild(cursoElemento);
     });
-
   } catch (erro) {
     console.error('Erro ao carregar dados:', erro);
   }
 
-
-  // Busca os dados dos projetos no JSON separado
+  // Busca os dados dos projetos
   fetch('assets/data/projetos.json')
-    .then(res => res.json()) // Converte pra objeto
+    .then(res => res.json())
     .then(data => {
-      const container = document.getElementById('projetos-container'); // Onde os projetos serão exibidos
+      const container = document.getElementById('projetos-container');
 
       data.projetos.forEach(projeto => {
         const div = document.createElement('div');
         div.classList.add('projeto');
 
-        // Gera os spans com as tecnologias usadas, ordenadas por nome
         const tecnologiasHTML = projeto.tecnologias
           .sort((a, b) => a.localeCompare(b))
           .map(tecnologia => `<span class="tag-tecnologia">${tecnologia}</span>`)
           .join(' ');
 
-        // Se tiver imagem, mostra; senão, ignora (deixa string vazia)
-        const imagemHTML = projeto.imagem && projeto.imagem.trim() !== ''
-          ? `<img src="${projeto.imagem}" alt="Imagem do projeto ${projeto.nome}" class="projeto-imagem">`
-          : '';
+        const imagemHTML =
+          projeto.imagem && projeto.imagem.trim() !== ''
+            ? `<img src="${projeto.imagem}" alt="Imagem do projeto ${projeto.nome}" class="projeto-imagem">`
+            : '';
 
-        // Monta o HTML do projeto
         div.innerHTML = `
           <h2>${projeto.nome}</h2>
           ${imagemHTML}
@@ -116,51 +110,53 @@ async function carregarDados() {
           <p><strong>Tecnologias utilizadas:</strong> ${tecnologiasHTML}</p>
           <p><strong>Minhas responsabilidades:</strong> ${projeto.responsabilidades}</p>
           <p><strong>Status:</strong> ${projeto.status}</p>
-          <p><a href="${projeto.link}" target="_blank" rel="noopener noreferrer">Ver projeto</a></p>
+          <p>
+            <a href="${projeto.link}" target="_blank" rel="noopener noreferrer">
+              Ver projeto
+            </a>
+          </p>
           <hr>
         `;
 
-        container.appendChild(div); // Adiciona no DOM
+        container.appendChild(div);
       });
     })
     .catch(err => console.error('Erro ao carregar o JSON:', err));
 
-fetch('assets/data/experiencias.json')
-  .then(res => res.json())
-  .then(data => {
-    const container = document.getElementById('experiencias-container');
+  // Busca os dados das experiências
+  fetch('assets/data/experiencias.json')
+    .then(res => res.json())
+    .then(data => {
+      const container = document.getElementById('experiencias-container');
 
-    data.experiencias.forEach(exp => {
-      const div = document.createElement('div');
-      div.classList.add('experiencia-card');
+      data.experiencias.forEach(exp => {
+        const div = document.createElement('div');
+        div.classList.add('experiencia-card');
 
-      // Gera as tags
-      const tagsHTML = exp.tags
-        .sort((a, b) => a.localeCompare(b))
-        .map(tag => `<span class="tag-tecnologia">${tag}</span>`)
-        .join(' ');
+        const tagsHTML = exp.tags
+          .sort((a, b) => a.localeCompare(b))
+          .map(tag => `<span class="tag-tecnologia">${tag}</span>`)
+          .join(' ');
 
-      div.innerHTML = `
-        <h2>${exp.cargo}</h2>
+        div.innerHTML = `
+          <h2>${exp.cargo}</h2>
 
-        <div class="experiencia-local">
-          <span class="experiencia-empresa">${exp.empresa}</span>
-          <span class="experiencia-periodo">${exp.periodo}</span>
-        </div>
+          <div class="experiencia-local">
+            <span class="experiencia-empresa">${exp.empresa}</span>
+            <span class="experiencia-periodo">${exp.periodo}</span>
+          </div>
 
-        <p>${exp.descricao}</p>
+          <p>${exp.descricao}</p>
 
-        <div class="experiencia-tags">
-          ${tagsHTML}
-        </div>
-      `;
+          <div class="experiencia-tags">
+            ${tagsHTML}
+          </div>
+        `;
 
-
-      container.appendChild(div);
-    });
-  })
-  .catch(err => console.error('Erro ao carregar experiências:', err));
-
+        container.appendChild(div);
+      });
+    })
+    .catch(err => console.error('Erro ao carregar experiências:', err));
 }
 
 // Executa a função ao carregar o script
