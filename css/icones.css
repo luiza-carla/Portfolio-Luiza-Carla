@@ -6,7 +6,6 @@
   justify-content: center;
   background: linear-gradient(to bottom, var(--rosa-claro), var(--rosa-escuro));
   border-radius: 16px;
-    margin-top: 30px;
 }
 
 .icones > div {
@@ -70,10 +69,6 @@
 }
 
 
-.habilidades h1{
-  text-align: center;
-}
-
 .svg-icon {
   width: 50px;
   height: 50px;
@@ -85,4 +80,77 @@
 .svg-icon:hover {
   transform: scale(1.5);
   color: var(--preto);
+}
+
+
+.habilidades h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.habilidades-bloco {
+  max-width: 800px;
+  margin: 0 auto 3rem auto;
+  text-align: center;
+}
+
+.habilidades-subtitulo {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--preto);
+  opacity: 0.85;
+  letter-spacing: 0.5px;
+  margin-bottom: 1.2rem;
+  position: relative;
+}
+
+.habilidades-subtitulo::after {
+  content: '';
+  display: block;
+  width: 90px;
+  height: 3px;
+  margin: 6px auto 0 auto;
+  background: linear-gradient(
+    to right,
+    var(--rosa-claro),
+    var(--rosa-escuro)
+  );
+  border-radius: 2px;
+}
+
+.idioma-item {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;    
+  gap: 0.4rem;            
+  margin-top: 1rem;
+}
+
+
+.idioma-nome {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--rosa-medio);
+}
+
+.idioma-nivel {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--preto);
+}
+
+.idioma-cert {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--preto);
+}
+
+@media (max-width: 768px) {
+  .habilidades-bloco {
+    padding: 0 1rem;
+  }
+
+  .idioma-item {
+    gap: 0.4rem;
+  }
 }

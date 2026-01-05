@@ -1,0 +1,38 @@
+{
+  "experiencias": [
+    {
+      "cargo": "Estagiária em Recursos Humanos",
+      "empresa": "Prefeitura de Praia Grande",
+      "periodo": "Agosto 2025 - Dezembro 2025",
+      "descricao": "Atuação no apoio a processos internos do setor de Recursos Humanos, realizando atualização, análise e inserção de dados por meio do Excel e de banco de dados interno da prefeitura. Desenvolvimento de habilidades de comunicação, organização e trabalho em equipe, contribuindo para maior precisão e agilidade no fluxo de informações.",
+      "tags": [
+        "Excel",
+        "Análise de Dados",
+        "Organização",
+        "Comunicação",
+        "Trabalho em Equipe"
+      ]
+    },
+    {
+      "cargo": "Desenvolvedora Júnior Python/Django",
+      "empresa": "RECICLA LEAD CRM",
+      "periodo": "Junho 2025 - Presente",
+      "descricao": "Desenvolvimento e implementação de funcionalidades utilizando Python e Django, atuando na manutenção e evolução de aplicações web. Modelagem e manipulação de bancos de dados PostgreSQL, aplicação de princípios SOLID na criação de CRUDs, realização de testes de API com Postman e contribuição contínua na correção de bugs e melhoria de módulos existentes.",
+      "tags": [
+        "Python",
+        "Django",
+        "PostgreSQL",
+        "APIs REST",
+        "Postman",
+        "CRUD",
+        "SOLID",
+        "Backend",
+        "MongoDB",
+        "Git",
+        "GitHub",
+        "Postman",
+        "Scrum" 
+      ]
+    }
+  ]
+}

@@ -2,7 +2,7 @@
     "projetos": [
         {
             "nome": "Assistente Virtual Educacional SIGA",
-            "descricao": "Aviso: o site antigo do SIGA foi descontinuado, portanto o projeto não é mais possível de ser rodado ou visualizado. Projeto desenvolvido durante as aulas ministradas pelo professor Ricardo Pupo Larguesa na matéria de Programação Orientada à Objetos (POO). Este projeto tem o objetivo de desenvolver um sistema integrado com a IA do Google (Gemini) responsável por oferecer suporte aos alunos que utilizam do “SIGA”, ajudando com o aprendizado e respondendo dúvidas atreladas às informações acadêmicas do aluno.",
+            "descricao": "Projeto desenvolvido durante as aulas ministradas pelo professor Ricardo Pupo Larguesa na matéria de Programação Orientada à Objetos (POO). Este projeto tem o objetivo de desenvolver um sistema integrado com a IA do Google (Gemini) responsável por oferecer suporte aos alunos que utilizam do “SIGA”, ajudando com o aprendizado e respondendo dúvidas atreladas às informações acadêmicas do aluno.",
             "tecnologias": [
                 "Apache NetBeans 22",
                 "Jakarta EE 10 Web",
@@ -46,8 +46,8 @@
                 "CSS"
             ],
             "imagem": "assets/img/radarpg.png",
-            "responsabilidades": "Desenvolvimento do modelo lógico de dados e tabelas do banco de dados, back-end de login, cadastro, perfil e editar perfil, permissões de administrador, sessão do usuário e front-end.",
-            "status": "Em andamento...",
+            "responsabilidades": "Desenvolvimento do modelo lógico de dados e tabelas do banco de dados, back-end de login, cadastro, perfil e editar perfil, sessão do usuário, front-end e relatório técnico.",
+            "status": "Finalizado.",
             "link": "https://github.com/ruann-fernandess/Radar_Praia-Grande"
         },
         {

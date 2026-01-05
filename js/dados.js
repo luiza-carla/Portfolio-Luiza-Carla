@@ -86,7 +86,6 @@ async function carregarDados() {
     console.error('Erro ao carregar dados:', erro);
   }
 
-  // ============ Projetos ============
 
   // Busca os dados dos projetos no JSON separado
   fetch('assets/data/projetos.json')
@@ -125,6 +124,43 @@ async function carregarDados() {
       });
     })
     .catch(err => console.error('Erro ao carregar o JSON:', err));
+
+fetch('assets/data/experiencias.json')
+  .then(res => res.json())
+  .then(data => {
+    const container = document.getElementById('experiencias-container');
+
+    data.experiencias.forEach(exp => {
+      const div = document.createElement('div');
+      div.classList.add('experiencia-card');
+
+      // Gera as tags
+      const tagsHTML = exp.tags
+        .sort((a, b) => a.localeCompare(b))
+        .map(tag => `<span class="tag-tecnologia">${tag}</span>`)
+        .join(' ');
+
+      div.innerHTML = `
+        <h2>${exp.cargo}</h2>
+
+        <div class="experiencia-local">
+          <span class="experiencia-empresa">${exp.empresa}</span>
+          <span class="experiencia-periodo">${exp.periodo}</span>
+        </div>
+
+        <p>${exp.descricao}</p>
+
+        <div class="experiencia-tags">
+          ${tagsHTML}
+        </div>
+      `;
+
+
+      container.appendChild(div);
+    });
+  })
+  .catch(err => console.error('Erro ao carregar experiências:', err));
+
 }
 
 // Executa a função ao carregar o script
