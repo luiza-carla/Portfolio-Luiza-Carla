@@ -1,9 +1,19 @@
-#formacoes, #cursosIndependentes {
+.cursos h1 {
+  text-align: center;
+}
+
+#cursoTitulo {
+  margin-top: 50px;
+}
+
+#formacoes,
+#cursosIndependentes {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
   margin: 20px;
   padding: 10px;
+  align-items: start;
 }
 
 .formacao{
@@ -12,17 +22,10 @@
   box-shadow: 0 4px 8px rgba(102, 65, 108, 0.2);
   padding: 15px;
   transition: transform 0.2s ease;
+  align-self: start;
 }
 
-.curso-independente{
-  background: linear-gradient(to right, var(--rosa-medio), var(--rosa-escuro));
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(102, 65, 108, 0.2);
-  padding: 15px;
-  transition: transform 0.2s ease;
-}
-
-.formacao:hover, .curso-independente:hover {
+.formacao:hover {
   transform: translateY(-5px);
   background: var(--preto);
 }
@@ -32,6 +35,64 @@
   color: white;
   font-size: 1.3em;
   text-align: center;
+}
+
+.formacao {
+  display: flex;
+  flex-direction: column;
+  min-height: 140px;
+}
+
+.formacao-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-top: 6px;
+
+  color: rgba(255, 255, 255, 0.95);
+  font-weight: 800;
+  font-size: 0.9em;
+}
+
+.formacao details {
+  margin-top: auto;
+}
+
+.formacao details {
+  margin-top: 10px;
+}
+
+.formacao summary {
+  list-style: none;
+  cursor: pointer;
+  user-select: none;
+  background-color: rgba(255, 255, 255, 0.92);
+  border-radius: 8px;
+  padding: 10px;
+  font-weight: 800;
+  color: var(--preto);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.formacao summary::-webkit-details-marker {
+  display: none;
+}
+
+.formacao summary::after {
+  content: "▾";
+  font-weight: 900;
+  opacity: 0.75;
+}
+
+.formacao details[open] summary::after {
+  content: "▴";
+}
+
+.formacao-lista {
+  margin-top: 10px;
 }
 
 .curso {
@@ -49,26 +110,84 @@
   line-height: 1.4;
 }
 
-.curso-independente h3 {
-  margin-top: 0;
-  margin-bottom: 8px;
-  color: white;
-  font-size: 1.1em;
+.curso-linha {
+  margin-top: 4px;
+  font-weight: 700;
+  opacity: 0.9;
+  font-size: 0.9em;
+}
 
+.curso-independente {
+  background: linear-gradient(to right, var(--rosa-medio), var(--rosa-escuro));
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(102, 65, 108, 0.2);
+  padding: 15px;
+  transition: transform 0.2s ease;
+  height: 110px; 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.curso-independente:hover {
+  transform: translateY(-5px);
+  background: var(--preto);
+}
+
+.curso-independente h3 {
+  margin: 0;
+  color: white;
+  font-size: 1.05em;
+  line-height: 1.2;
+  font-weight: 800;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .curso-independente p {
-  margin: 0;
+  margin: 10px 0 0 0;
+  color: rgba(255, 255, 255, 0.95);
+  font-size: 0.88em;
+  line-height: 1.25;
+  font-weight: 600;
+
+}
+
+.curso-independente:hover {
+  transform: translateY(-5px);
+  background: var(--preto);
+}
+
+.cursos-toggle-wrap {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0 28px;
+}
+
+.cursos-toggle-btn {
+  padding: 10px 16px;
+  border-radius: 999px;
+  border: none;
+  background: linear-gradient(to right, var(--rosa-medio), var(--rosa-escuro));
   color: white;
-  font-size: 0.9em;
-  line-height: 1.3;
-  font-weight: 500;
+  font-weight: 800;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(102, 65, 108, 0.25);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
 
-.cursos h1{
-text-align: center;
+.cursos-toggle-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(102, 65, 108, 0.30);
 }
 
-#cursoTitulo{
-    margin-top: 50px;
+@media (max-width: 768px) {
+  #formacoes,
+  #cursosIndependentes {
+    grid-template-columns: 1fr;
+    margin: 14px;
+  }
 }

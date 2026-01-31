@@ -1,39 +1,49 @@
 {
   "experiencias": [
     {
-      "cargo": "Estagiária em Recursos Humanos",
-      "empresa": "Prefeitura de Praia Grande",
-      "periodo": "Agosto 2025 - Dezembro 2025",
-      "descricao": "Atuação no apoio a processos internos do setor de Recursos Humanos, realizando atualização, análise e inserção de dados por meio do Excel e de banco de dados interno da prefeitura. Desenvolvimento de habilidades de comunicação, organização e trabalho em equipe, contribuindo para maior precisão e agilidade no fluxo de informações.",
-      "tags": [
-        "Excel",
-        "Análise de Dados",
-        "Organização",
-        "Comunicação",
-        "Trabalho em Equipe"
-      ]
-    },
-    {
       "cargo": "Desenvolvedora Júnior Python/Django",
       "empresa": "RECICLA LEAD CRM",
       "periodo": "Junho 2025 - Presente",
-      "descricao": "Desenvolvimento e implementação de funcionalidades utilizando Python e Django, atuando na manutenção e evolução de aplicações web. Modelagem e manipulação de bancos de dados PostgreSQL, aplicação de princípios SOLID na criação de CRUDs, realização de testes de API com Postman e contribuição contínua na correção de bugs e melhoria de módulos existentes.",
+      "descricao": "Atuo na evolução de um CRM com Python/Django, trabalhando com PostgreSQL e MongoDB. Desenvolvo funcionalidades de ponta a ponta, com foco em segurança, rastreabilidade e organização do sistema.",
+      "destaques": [
+        "Notificações de novas oportunidades com contagem em tempo real para melhorar o acompanhamento de leads.",
+        "Módulo de permissões (RBAC) com controle granular de acesso (visualizar, criar, editar e excluir).",
+        "Gerenciamento de arquivos (CRUD) com upload, busca e filtros, além de auditoria (autor e timestamp).",
+        "Rotina ágil com Scrum e Kanban, Jira para organização, Git/GitHub e Docker. Em produção, acompanho logs na AWS."
+      ],
       "tags": [
         "Python",
         "Django",
         "PostgreSQL",
         "APIs REST",
-        "Postman",
         "CRUD",
-        "SOLID",
-        "Backend",
         "MongoDB",
         "Git",
         "GitHub",
         "Postman",
         "Scrum", 
         "Kanban",
-        "Docker"
+        "Docker",
+        "Jira",
+        "AWS (Logs)"
+      ]
+    },
+    {
+      "cargo": "Estagiária em Recursos Humanos",
+      "empresa": "Prefeitura de Praia Grande",
+      "periodo": "Agosto 2025 - Dezembro 2025",
+      "descricao": "Atuei no RH com rotinas administrativas e controle de informações, garantindo consistência de dados e apoio ao fluxo de processos entre setores.",
+      "destaques": [
+        "Cadastro, atualização e validação de processos administrativos em sistema interno, garantindo precisão e consistência.",
+        "Acompanhamento do fluxo físico e digital de processos entre setores, com atenção a encaminhamentos e prazos.",
+        "Suporte operacional a diferentes áreas, ajudando a manter o trabalho do setor mais organizado e eficiente."
+      ],
+      "tags": [
+        "Organização",
+        "Atenção a detalhes",
+        "Comunicação",
+        "Trabalho em equipe",
+        "Rotinas administrativas"
       ]
     }
   ]
