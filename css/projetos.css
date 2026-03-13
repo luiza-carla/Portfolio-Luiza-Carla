@@ -1,4 +1,4 @@
-#projetos-container div {
+#projetos-container .projeto{
   max-width: 70%;
   margin: 30px auto 50px auto; 
   padding: 20px;
@@ -37,22 +37,23 @@
 }
 
 .projetos h1{
-    text-align: center;
+  text-align: center;
 }
 
 .projetos{
-    margin: 1em;
+  margin: 1em;
 }
 
 .projeto-imagem {
   display: block;
-  width: 100%;    
-  aspect-ratio: 16 / 9;  
+  width: 100%;
+  aspect-ratio: auto;
   object-fit: cover;
-  margin: 10px auto;   
+
+  margin: 10px auto;
   border-radius: 6px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  max-width: 60%;
+  max-width: 80%;
 }
 
 .tag-tecnologia {
@@ -71,3 +72,135 @@
 .tag-tecnologia:hover {
   background-color: var(--preto);
 }
+
+.carousel {
+  position: relative;
+  max-width: 80%;
+  width: 100%;
+  margin: 15px auto 28px;
+}
+
+.carousel-inner {
+  position: relative;
+}
+
+.carousel img {
+  width: 100%;
+  aspect-ratio: auto;
+  object-fit: cover;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--rosa-medio);
+  color: white;
+  font-size: 22px;
+  cursor: pointer;
+  line-height: 1;
+  padding: 0;
+}
+
+.carousel-btn:hover {
+  background: var(--rosa-escuro);
+}
+
+
+/* posição */
+
+.carousel-btn.prev {
+  left: 10px;
+  top: 40%;
+}
+
+.carousel-btn.next {
+  right: 10px;
+  top: 40%;
+}
+
+/* centralização da seta */
+.carousel-btn span {
+  transform: translateY(-2px);
+}
+
+
+/* aparecer só quando hover */
+.carousel-btn {
+  opacity: 0;
+}
+
+.carousel:hover .carousel-btn {
+  opacity: 1;
+}
+
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+  margin-top: 10px;
+  z-index: 2;
+}
+
+.carousel-dot {
+  display: inline-flex;
+  margin: 0;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--rosa-clarissimo);
+  border: 1px solid var(--rosa-medio);
+  cursor: pointer;
+  padding: 0;
+  vertical-align: middle;
+  transition: transform 0.15s ease, background 0.15s ease;
+}
+
+.carousel-dot:hover {
+  transform: scale(1.15);
+}
+
+.carousel-dot.active {
+  background: var(--rosa-medio);
+}
+
+@media (max-width: 768px) {
+  #projetos-container .projeto {
+    max-width: 90%;
+    margin: 20px auto;
+    padding: 16px;
+  }
+
+  .projeto-imagem,
+  .carousel {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .carousel-btn {
+    width: 34px;
+    height: 34px;
+    font-size: 18px;
+    opacity: 1;
+  }
+
+  .carousel-btn.prev {
+    left: 8px;
+    top: 35%;
+  }
+
+  .carousel-btn.next {
+    right: 8px;
+    top: 35%;
+  }
+}
+

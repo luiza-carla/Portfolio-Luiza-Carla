@@ -110,19 +110,19 @@ button {
   font-family: var(--fonte-principal);
 }
 
-button::after {
+.btn-underline::after {
   content: '';
   position: absolute;
   bottom: 8px;
   left: 50%;
   transform: translateX(-50%) scaleX(0); 
-  width: 70%; 
+  width: 70%;
   height: 2px;
   background: white;
-  transform-origin: center; 
+  transform-origin: center;
   transition: transform 0.3s ease-in-out;
 }
 
-button:hover::after {
+.btn-underline:hover::after {
   transform: translateX(-50%) scaleX(1);
 }

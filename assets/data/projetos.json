@@ -1,27 +1,39 @@
 {
     "projetos": [
-        {
-            "nome": "Assistente Virtual Educacional SIGA",
-            "descricao": "Projeto desenvolvido durante as aulas ministradas pelo professor Ricardo Pupo Larguesa na matéria de Programação Orientada à Objetos (POO). Este projeto tem o objetivo de desenvolver um sistema integrado com a IA do Google (Gemini) responsável por oferecer suporte aos alunos que utilizam do “SIGA”, ajudando com o aprendizado e respondendo dúvidas atreladas às informações acadêmicas do aluno.",
+                {
+            "nome": "Gestão financeira pessoal",
+            "descricao": "Aplicativo para gerenciamento de finanças pessoais, permitindo aos usuários controlar despesas, receitas e visualizar relatórios financeiros.",
             "tecnologias": [
-                "Apache NetBeans 22",
-                "Jakarta EE 10 Web",
-                "Maven",
-                "JDK 19",
-                "Glassfish 7.0",
-                "SQLite",
-                "Gemini 1.5 Flash",
-                "HTMLUnit",
-                "Selenium",
-                "Bootstrap 5",
-                "Google Fonts",
-                "Ajax",
                 "CSS",
-                "JavaScript"
+                "JavaScript",
+                "Node.js",
+                "Express",
+                "MongoDB",
+                "Mongoose",
+                "HTML",
+                "BCrypt",
+                "Dotenv",
+                "Nodemon",
+                "FontAwesome",
+                "node-cron",
+                "JWT",
+                "CORS",
+                "ESlint",
+                "Prettier",
+                "Faker"
             ],
-            "responsabilidades": "Desenvolvimento do front-end.",
-            "status": "Finalizado.",
-            "link": "https://github.com/isaquesv/assistenteVirtualEducacionalSIGA"
+            "imagens": [
+                "assets/img/gastos-login.png",
+                "assets/img/gastos-resumo.png",
+                "assets/img/gastos-conta.png",
+                "assets/img/gastos-transacoes.png",
+                "assets/img/gastos-listadsj.png",
+                "assets/img/gastos-salario.png",
+                "assets/img/gastos-historico.png"
+            ],
+            "responsabilidades": "Desenvolvimento completo do projeto, incluindo front-end, back-end, banco de dados e integração com servidor local.",
+            "status": "Em andamento...",
+            "link": "https://github.com/luiza-carla/gastos"
         },
         {
             "nome": "Radar Praia Grande",
@@ -49,6 +61,29 @@
             "responsabilidades": "Desenvolvimento do modelo lógico de dados e tabelas do banco de dados, back-end de login, cadastro, perfil e editar perfil, sessão do usuário, front-end e relatório técnico.",
             "status": "Finalizado.",
             "link": "https://github.com/ruann-fernandess/Radar_Praia-Grande"
+        },
+                {
+            "nome": "Assistente Virtual Educacional SIGA",
+            "descricao": "Projeto desenvolvido durante as aulas ministradas pelo professor Ricardo Pupo Larguesa na matéria de Programação Orientada à Objetos (POO). Este projeto tem o objetivo de desenvolver um sistema integrado com a IA do Google (Gemini) responsável por oferecer suporte aos alunos que utilizam do “SIGA”, ajudando com o aprendizado e respondendo dúvidas atreladas às informações acadêmicas do aluno.",
+            "tecnologias": [
+                "Apache NetBeans 22",
+                "Jakarta EE 10 Web",
+                "Maven",
+                "JDK 19",
+                "Glassfish 7.0",
+                "SQLite",
+                "Gemini 1.5 Flash",
+                "HTMLUnit",
+                "Selenium",
+                "Bootstrap 5",
+                "Google Fonts",
+                "Ajax",
+                "CSS",
+                "JavaScript"
+            ],
+            "responsabilidades": "Desenvolvimento do front-end.",
+            "status": "Finalizado.",
+            "link": "https://github.com/isaquesv/assistenteVirtualEducacionalSIGA"
         },
         {
             "nome": "API de livros",

@@ -174,10 +174,99 @@ async function carregarDados() {
           .map(tecnologia => `<span class="tag-tecnologia">${tecnologia}</span>`)
           .join(' ');
 
-        const imagemHTML =
-          projeto.imagem && projeto.imagem.trim() !== ''
-            ? `<img src="${projeto.imagem}" alt="Imagem do projeto ${projeto.nome}" class="projeto-imagem">`
-            : '';
+        let imagens = [];
+
+        if (Array.isArray(projeto.imagens)) {
+          imagens = projeto.imagens;
+        } else if (projeto.imagem) {
+          imagens = [projeto.imagem];
+        }
+
+        let imagemHTML = "";
+
+        if (imagens.length === 1) {
+          imagemHTML = `
+            <img src="${imagens[0]}" 
+            alt="Imagem do projeto ${projeto.nome}" 
+            class="projeto-imagem">
+          `;
+        }
+
+        if (imagens.length > 1) {
+          const id = "carousel-" + Math.random().toString(36).slice(2);
+
+          const dotsHTML = imagens
+            .map(
+              (_, i) =>
+                `<button type="button" class="carousel-dot${i === 0 ? ' active' : ''}" aria-label="Slide ${
+                  i + 1
+                }" data-index="${i}"></button>`
+            )
+            .join('');
+
+          imagemHTML = `
+            <div class="carousel" id="${id}">
+              <div class="carousel-inner">
+                <button class="carousel-btn prev"><span><</span></button>
+                <img src="${imagens[0]}" alt="Imagem do projeto ${projeto.nome}">
+                <button class="carousel-btn next"><span>></span></button>
+              </div>
+              <div class="carousel-dots">
+                ${dotsHTML}
+              </div>
+            </div>
+          `;
+
+          setTimeout(() => {
+            const carousel = document.getElementById(id);
+            const img = carousel.querySelector('img');
+            const prev = carousel.querySelector('.prev');
+            const next = carousel.querySelector('.next');
+            const dots = Array.from(carousel.querySelectorAll('.carousel-dot'));
+
+            let index = 0;
+
+            const setSlide = (newIndex) => {
+              index = newIndex;
+              img.src = imagens[index];
+              dots.forEach((dot, i) => dot.classList.toggle('active', i === index));
+            };
+
+            prev.onclick = () => setSlide((index - 1 + imagens.length) % imagens.length);
+            next.onclick = () => setSlide((index + 1) % imagens.length);
+            dots.forEach((dot) => {
+              dot.addEventListener('click', () => setSlide(Number(dot.dataset.index)));
+            });
+
+            let touchStartX = 0;
+            let isTouching = false;
+
+            const onTouchStart = (event) => {
+              if (event.touches.length !== 1) return;
+              touchStartX = event.touches[0].clientX;
+              isTouching = true;
+            };
+
+            const onTouchEnd = (event) => {
+              if (!isTouching) return;
+              isTouching = false;
+
+              const touchEndX = (event.changedTouches && event.changedTouches[0]?.clientX) || 0;
+              const delta = touchEndX - touchStartX;
+              const THRESHOLD = 40;
+
+              if (Math.abs(delta) < THRESHOLD) return;
+              if (delta > 0) {
+                setSlide((index - 1 + imagens.length) % imagens.length);
+              } else {
+                setSlide((index + 1) % imagens.length);
+              }
+            };
+
+            carousel.addEventListener('touchstart', onTouchStart, { passive: true });
+            carousel.addEventListener('touchend', onTouchEnd);
+          });
+        }
 
         div.innerHTML = `
           <h2>${projeto.nome}</h2>

@@ -9,14 +9,13 @@
         "Notificações de novas oportunidades com contagem em tempo real para melhorar o acompanhamento de leads.",
         "Módulo de permissões (RBAC) com controle granular de acesso (visualizar, criar, editar e excluir).",
         "Gerenciamento de arquivos (CRUD) com upload, busca e filtros, além de auditoria (autor e timestamp).",
-        "Rotina ágil com Scrum e Kanban, Jira para organização, Git/GitHub e Docker. Em produção, acompanho logs na AWS."
+        "Rotina ágil com Scrum e Kanban, Jira para organização, Git/GitHub e Docker. Em produção, acompanho logs na AWS.",
+        "Reformulação visual, trazendo melhoras de design, usabilidade e legibilidade, garantindo uma interface mais intuitiva."
       ],
       "tags": [
         "Python",
         "Django",
         "PostgreSQL",
-        "APIs REST",
-        "CRUD",
         "MongoDB",
         "Git",
         "GitHub",
@@ -25,7 +24,11 @@
         "Kanban",
         "Docker",
         "Jira",
-        "AWS (Logs)"
+        "AWS",
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "FontAwesome"
       ]
     },
     {
