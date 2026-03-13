@@ -9,11 +9,13 @@
 #experiencias-container {
   display: flex;
   flex-direction: column;
+  gap: 40px;
+  margin-top: 26px;
 }
 
 .experiencia-card {
   max-width: 70%;
-  margin: 30px auto 50px auto;
+  margin: 0 auto;
   padding: 26px 26px 18px;
   background: rgba(255, 255, 255, 0.88);
   border-radius: 18px;
@@ -163,6 +165,11 @@
 }
 
 @media (max-width: 768px) {
+  #experiencias-container {
+    gap: 30px;
+    margin-top: 18px;
+  }
+
   .experiencia-card {
     max-width: 95%;
     padding: 22px 18px 16px;
