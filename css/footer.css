@@ -1,6 +1,6 @@
 #footer {
-  background: linear-gradient(to left, var(--rosa-claro), var(--rosa-escuro));
-  color: white;
+  background: linear-gradient(to left, var(--surface-alt), var(--accent-dark));
+  color: var(--text-light);
   text-align: center;
   padding: 20px;
   font-size: 18px;
@@ -8,7 +8,7 @@
 }
 
 #footer a {
-  color: white;
+  color: var(--text-light);
   text-decoration: none;
   font-weight: bold;
 }
@@ -20,6 +20,16 @@
 #footer p {
   margin: 8px 0;
   font-size: 15px;
+}
+
+body.theme-neutral #footer {
+  background: var(--accent-dark);
+  color: var(--surface);
+  border-top: 1px solid var(--border);
+}
+
+body.theme-neutral #footer a {
+  color: var(--surface);
 }
 
 .footer-links {

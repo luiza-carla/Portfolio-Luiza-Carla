@@ -1,7 +1,3 @@
-:root {
-  --gradiente-navbar: linear-gradient(to right, var(--rosa-claro), var(--rosa-escuro));
-}
-
 .navbar {
   background: var(--gradiente-navbar);
   padding: 0.5em 0;
@@ -10,7 +6,7 @@
   left: 0;
   width: 100%;  
   z-index: 1000;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 6px var(--navbar-shadow);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -18,14 +14,39 @@
 
 .navbar__toggle {
   display: none;
-  background: white;
+  background: var(--navbar-button-bg);
   border: none;
   font-size: 1.3em; 
-  color: var(--preto);
+  color: var(--text);
   cursor: pointer;
   border-radius: 50px;
   padding: 0.4em 0.6em;
   z-index: 1100;
+}
+
+.navbar__theme {
+  position: absolute;
+  right: 1rem;
+  background: var(--navbar-button-bg);
+  color: var(--text);
+  cursor: pointer;
+  border-radius: 999px;
+  border: 0px;
+  padding: 0.45em 0.9em;
+  font-weight: 700;
+  font-size: 0.9em;
+  letter-spacing: 0.2px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.navbar__theme:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 12px var(--navbar-shadow);
+}
+
+.navbar__theme[aria-pressed="true"] {
+  background: var(--text);
+  color: var(--text-light);
 }
 
 .navbar__lista {
@@ -47,6 +68,8 @@
     display: block;
     position: relative;
     margin: 0 0.6em 0 0;
+    background: var(--surface-elevated);
+    color: var(--text);
   }
 
   .navbar__lista {
@@ -56,7 +79,7 @@
     position: fixed;
     top: 1.7em; 
     right: 0;
-    box-shadow: 0 4px 4px -2px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 4px -2px var(--navbar-shadow);
     width: 100%;
     padding: 1em 0;
     z-index: 999;
@@ -71,10 +94,18 @@
     text-align: center;
     margin: 0.5em 0;
   }
+
+  .navbar__theme {
+    position: absolute;
+    left: 0.6rem;
+    right: auto;
+    font-size: 0.85em;
+    padding: 0.4em 0.75em;
+  }
 }
 
 .navbar__lista li a {
-  color: white;
+  color: var(--navbar-text);
   display: block;
   padding: 0.5em;
   position: relative;
@@ -90,7 +121,7 @@
   bottom: 0;
   width: 100%;
   height: 2px;
-  background: white;
+  background: var(--navbar-text);
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 0.3s ease-in-out;
@@ -101,6 +132,6 @@
 }
 
 .navbar__lista li a.active {
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: var(--navbar-accent);
   border-radius: 8px;
 }

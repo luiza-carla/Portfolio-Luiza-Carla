@@ -21,15 +21,15 @@
   bottom: -4px;
   background: linear-gradient(
     45deg,
-    white,
-    var(--rosa-clarissimo),
-    var(--rosa-claro),
-    var(--rosa-medio),
-    var(--rosa-escuro),
-    var(--rosa-medio),
-    var(--rosa-claro),
-    var(--rosa-clarissimo),
-    white
+    var(--text-light),
+    var(--surface),
+    var(--surface-alt),
+    var(--accent),
+    var(--accent-dark),
+    var(--accent),
+    var(--surface-alt),
+    var(--surface),
+    var(--text-light)
   );
   background-size: 400% 400%;
   border-radius: 50%;

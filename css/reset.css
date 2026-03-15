@@ -4,9 +4,13 @@
 }
 
 body {
-  background-color: var(--rosa-clarissimo);
-  color: var(--preto);
+  background-color: var(--site-bg);
+  color: var(--text);
   font-family: var(--fonte-principal)
+}
+
+body.theme-neutral {
+  background-color: var(--site-bg);
 }
 
 html {
@@ -19,7 +23,7 @@ html {
 
 .divisor {
   border: none;
-  border-top: 1px solid var(--rosa-claro);
+  border-top: 1px solid var(--border);
   width: 100%;
   margin: 2rem 0;
 }

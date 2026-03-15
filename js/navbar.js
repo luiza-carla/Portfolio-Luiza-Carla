@@ -1,10 +1,17 @@
 document.addEventListener('DOMContentLoaded', () => {
   const toggle = document.querySelector('.navbar__toggle'); // Botão de abrir/fechar o menu
   const menu = document.querySelector('.navbar__lista');    // Menu de navegação
+  const themeButton = document.querySelector('.navbar__theme');
+
+  const updateThemeButtonVisibility = () => {
+    if (!themeButton) return;
+    themeButton.style.display = menu.classList.contains('active') ? 'none' : '';
+  };
 
   // Quando o botão for clicado, alterna a visibilidade do menu
   toggle.addEventListener('click', () => {
     menu.classList.toggle('active');
+    updateThemeButtonVisibility();
   });
 
   // Fecha o menu se clicar fora dele ou fora do botão
@@ -12,8 +19,28 @@ document.addEventListener('DOMContentLoaded', () => {
     const isClickInside = menu.contains(event.target) || toggle.contains(event.target);
     if (!isClickInside) {
       menu.classList.remove('active');
+      updateThemeButtonVisibility();
     }
   });
+
+  if (themeButton) {
+    const body = document.body;
+
+    const setTheme = (isNeutral) => {
+      body.classList.toggle('theme-neutral', isNeutral);
+      themeButton.setAttribute('aria-pressed', String(isNeutral));
+      themeButton.textContent = isNeutral ? 'Modo rosa' : 'Modo neutro';
+      localStorage.setItem('theme', isNeutral ? 'neutral' : 'pink');
+    };
+
+    const savedTheme = localStorage.getItem('theme');
+    setTheme(savedTheme === 'neutral');
+
+    themeButton.addEventListener('click', () => {
+      const isNeutral = !body.classList.contains('theme-neutral');
+      setTheme(isNeutral);
+    });
+  }
 
   // Pega todas as seções com ID (inclui o footer)
   const sections = document.querySelectorAll('section[id], footer[id]');
@@ -55,11 +82,13 @@ document.addEventListener('DOMContentLoaded', () => {
   // Chama a função toda vez que a página rolar
   window.addEventListener('scroll', highlightCurrentSection);
   highlightCurrentSection(); // Também chama uma vez ao carregar a página
+  updateThemeButtonVisibility();
 
   // Fecha o menu se um link da navbar for clicado (pra mobile)
   links.forEach(link => {
     link.addEventListener('click', () => {
       menu.classList.remove('active');
+      updateThemeButtonVisibility();
     });
   });
 });

@@ -16,6 +16,7 @@
   <body>
     <nav class="navbar">
       <button class="navbar__toggle" aria-label="Abrir menu">&#9776;</button>
+      <button class="navbar__theme" type="button" aria-pressed="false">Modo neutro</button>
 
       <ul class="navbar__lista">
         <li><a href="#inicio">Início</a></li>
@@ -29,53 +30,51 @@
 
     <main>
       <section class="container principal" id="inicio">
-        <div class="principal__texto">
-          <h1 class="principal__nome">Luiza Carla</h1>
-          <h2 class="principal__cargo">Desenvolvedora Back-end</h2>
-
-          <div class="principal__stack">
-            <span class="tag-tecnologia">Python</span>
-            <span class="tag-tecnologia">Django</span>
-            <span class="tag-tecnologia">SQL</span>
-            <span class="tag-tecnologia">API REST</span>
+        <div class="principal__topo">
+          <div class="container__imagem">
+            <img src="./assets/img/eu.jpeg" alt="Luiza Carla" />
           </div>
 
-          <p>
-            Sou desenvolvedora com foco em back-end, atuando principalmente com
-            <strong>Python</strong> e <strong>Django</strong>, além de experiência com
-            <strong>SQL</strong> e bancos relacionais (<strong>PostgreSQL</strong>,
-            <strong>SQLite</strong>) e NoSQL (<strong>MongoDB</strong>). No dia a dia,
-            desenvolvo e mantenho <strong>APIs REST</strong>, faço modelagem de dados e
-            implemento funcionalidades com versionamento via <strong>Git</strong>.
-          </p>
+          <div class="principal__texto">
+            <h1 class="principal__nome">Luiza Carla</h1>
+            <h2 class="principal__cargo">Desenvolvedora Full Stack</h2>
 
-          <p>
-            Sou formada em <strong>Análise e Desenvolvimento de Sistemas</strong> pela
-            FATEC Praia Grande e atualmente atuo como <strong>Desenvolvedora Júnior</strong>
-            no <strong>Recicla Lead CRM</strong>, contribuindo na evolução do sistema,
-            correção de bugs e melhorias contínuas. Também tenho noções de
-            <strong>Node.js/Express</strong> e familiaridade com <strong>Docker</strong>
-            no ambiente de desenvolvimento.
-          </p>
+            <p class="principal__intro">
+              Desenvolvendo sistemas web e APIs com foco em organização, confiabilidade e evolução contínua de software.
+            </p>
 
-          <p>
-            Tenho perfil analítico, foco em resolução de problemas e gosto de trabalhar com
-            organização e ritmo de entregas. Atuo com metodologias ágeis como
-            <strong>Scrum</strong> e <strong>Kanban</strong>, buscando manter clareza no código,
-            consistência e eficiência nas aplicações.
-          </p>
-
-          <a
-            href="https://luiza-carla.github.io/curriculo-luiza/CurriculoLuizaCarla.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <button class="btn-underline">Visualizar CV</button>
-          </a>
+            <div class="principal__stack">
+              <span class="tag-tecnologia">Python</span>
+              <span class="tag-tecnologia">Django</span>
+              <span class="tag-tecnologia">Node.js</span>
+              <span class="tag-tecnologia">PostgreSQL</span>
+              <span class="tag-tecnologia">MongoDB</span>
+            </div>
+          </div>
         </div>
 
-        <div class="container__imagem">
-          <img src="./assets/img/eu.jpeg" alt="Luiza Carla" />
+        <div class="principal__conteudo">
+          <div class="principal__bio">
+            <p>
+              Desenvolvedora formada em <strong>Análise e Desenvolvimento de Sistemas pela FATEC Praia Grande</strong>,
+              com experiência prática na construção e evolução de aplicações web.
+            </p>
+
+            <p>
+              Atualmente atuo como <strong>Desenvolvedora Júnior no Recicla Lead CRM</strong>, contribuindo
+              no desenvolvimento e manutenção do sistema, participando da implementação de novas funcionalidades
+              e da melhoria contínua da aplicação.
+            </p>
+          </div>
+
+          <a
+            class="principal__cta"
+            href="./assets/cv/CurriculoLuizaCarla.pdf"
+            download="CurriculoLuizaCarla.pdf"
+          >
+            <button class="btn-underline">Baixar currículo</button>
+          </a>
+
         </div>
       </section>
 
