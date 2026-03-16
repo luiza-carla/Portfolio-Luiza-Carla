@@ -58,7 +58,28 @@
   padding: 0;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
+  .navbar__lista li a {
+    font-size: 8px;
+  }
+
+  .navbar__lista {
+    gap: 0em;
+  }
+
+  .navbar__theme {
+    font-size: 0.8em;
+    padding: 0.35em 0.7em;
+  }
+}
+
+@media (max-width: 900px) and (min-width: 801px) {
+  .navbar__lista {
+    padding-right: 6rem;
+  }
+}
+
+@media (max-width: 800px) {
   .navbar {
     justify-content: flex-end;
       padding: 0.3em 0;

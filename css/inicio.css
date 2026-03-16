@@ -74,22 +74,25 @@
   padding: 0.5rem 1rem;
   border-radius: 999px;
   background: var(--surface-elevated);
-  border: 1px solid var(--border-soft);
   box-shadow: 0 8px 18px color-mix(in srgb, var(--accent-dark) 12%, transparent);
   width: fit-content
 }
 
-
 .principal__intro {
   font-size: 1.1rem;
-  font-weight: 600;
+  font-weight: 700;
   color: var(--text);
   margin-bottom: 0.4rem;
   max-width: 520px;
 }
 
 body.theme-neutral .principal__intro {
-  color: var(--text-muted);
+  color: var(--text);
+}
+
+body.theme-neutral .principal__cargo {
+  background: var(--accent-dark);
+  color: var(--surface-elevated);
 }
 
 .principal__stack {
@@ -156,7 +159,7 @@ body.theme-neutral .principal__intro {
   max-width: 900px;
 }
 
-.principal .btn-underline {
+.btn-underline {
   margin-top: 0.6rem;
   position: relative;
   background: linear-gradient(to right, var(--surface-alt), var(--accent-dark));
@@ -175,6 +178,7 @@ body.theme-neutral .principal__intro {
   font-family: var(--fonte-principal);
   box-shadow: 0 14px 30px color-mix(in srgb, var(--accent-dark) 18%, transparent);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-decoration: none;
 }
 
 body.theme-neutral .principal {
@@ -194,7 +198,7 @@ body.theme-neutral .principal__cargo::after {
   background: color-mix(in srgb, var(--text) 25%, transparent);
 }
 
-body.theme-neutral .principal .btn-underline {
+body.theme-neutral .btn-underline {
   background: var(--accent-dark);
 }
 
@@ -202,12 +206,12 @@ body.theme-neutral .principal__bio p {
   background: var(--surface-elevated);
 }
 
-.principal .btn-underline:hover {
+.btn-underline:hover {
   transform: translateY(-2px);
   box-shadow: 0 18px 38px color-mix(in srgb, var(--accent-dark) 24%, transparent);
 }
 
-.principal .btn-underline::after {
+.btn-underline::after {
   content: '';
   position: absolute;
   bottom: 9px;
@@ -220,7 +224,7 @@ body.theme-neutral .principal__bio p {
   transition: transform 0.3s ease-in-out;
 }
 
-.principal .btn-underline:hover::after {
+.btn-underline:hover::after {
   transform: translateX(-50%) scaleX(1);
 }
 
@@ -263,17 +267,6 @@ body.theme-neutral .principal__bio p {
   animation-delay: 0.08s;
 }
 
-@keyframes heroReveal {
-  from {
-    opacity: 0;
-    transform: translateY(16px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
 @media (max-width: 900px) {
   .principal {
     text-align: center;
@@ -298,6 +291,9 @@ body.theme-neutral .principal__bio p {
     text-align: left;
   }
 
+  .principal__nome{
+    background-size: 200%;
+  }
 }
 
 @media (max-width: 600px) {
@@ -325,7 +321,7 @@ body.theme-neutral .principal__bio p {
 @media (prefers-reduced-motion: reduce) {
 .principal__texto,
 .principal .container__imagem,
-.principal .btn-underline {
+.btn-underline {
   animation: none;
   transition: none;
 }

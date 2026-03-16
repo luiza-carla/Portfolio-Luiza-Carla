@@ -1,5 +1,5 @@
 #projetos-container .projeto{
-		  max-width: 70%;
+		  max-width: 90%;
 		  margin: 30px auto 50px auto;
 		  padding: 26px 26px 18px;
 		  background: var(--surface-elevated);
@@ -14,6 +14,11 @@
 		  overflow: hidden;
 		  transition: transform 0.18s ease, box-shadow 0.18s ease;
 		}
+
+@media (min-width: 1050px) {
+  #projetos-container .projeto {
+    max-width: 75%;
+  }}
 
 body.theme-neutral #projetos-container .projeto {
   border-left-color: var(--accent-dark);
@@ -71,7 +76,7 @@ body.theme-neutral #projetos-container .projeto {
   margin: 10px auto;
   border-radius: 6px;
   box-shadow: 0 6px 14px color-mix(in srgb, var(--accent-dark) 12%, transparent);
-  max-width: 80%;
+  max-width: 100%;
 }
 
 .tag-tecnologia {
@@ -93,7 +98,7 @@ body.theme-neutral #projetos-container .projeto {
 
 .carousel {
   position: relative;
-  max-width: 80%;
+  max-width: 100%;
   width: 100%;
   margin: 15px auto 28px;
 }
@@ -221,7 +226,21 @@ body.theme-neutral .carousel-dot.active {
     width: 100%;
   }
 
+  .carousel-inner {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    grid-template-rows: auto auto;
+    row-gap: 10px;
+  }
+
+  .carousel-inner img {
+    grid-column: 1 / -1;
+    grid-row: 1;
+  }
+
   .carousel-btn {
+    position: static;
+    transform: none;
     width: 34px;
     height: 34px;
     font-size: 18px;
@@ -229,12 +248,14 @@ body.theme-neutral .carousel-dot.active {
   }
 
   .carousel-btn.prev {
-    left: 8px;
-    top: 35%;
+    grid-column: 1;
+    grid-row: 2;
+    justify-self: start;
   }
 
   .carousel-btn.next {
-    right: 8px;
-    top: 35%;
+    grid-column: 3;
+    grid-row: 2;
+    justify-self: end;
   }
 }
