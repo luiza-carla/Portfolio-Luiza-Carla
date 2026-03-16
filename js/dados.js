@@ -207,12 +207,14 @@ async function carregarDados() {
           imagemHTML = `
             <div class="carousel" id="${id}">
               <div class="carousel-inner">
-                <button class="carousel-btn prev"><span><</span></button>
                 <img src="${imagens[0]}" alt="Imagem do projeto ${projeto.nome}">
-                <button class="carousel-btn next"><span>></span></button>
               </div>
-              <div class="carousel-dots">
-                ${dotsHTML}
+              <div class="carousel-controls">
+                <button class="carousel-btn prev"><span><</span></button>
+                <div class="carousel-dots">
+                  ${dotsHTML}
+                </div>
+                <button class="carousel-btn next"><span>></span></button>
               </div>
             </div>
           `;
