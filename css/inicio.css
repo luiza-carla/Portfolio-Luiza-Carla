@@ -112,6 +112,8 @@ body.theme-neutral .principal__cargo {
 }
 
 .principal__bio p {
+  display: flex;
+  align-items: center;
   font-family: var(--fonte-principal);
   font-size: 1.02rem;
   font-weight: 600;
@@ -125,6 +127,10 @@ body.theme-neutral .principal__cargo {
   box-shadow:
     0 12px 22px color-mix(in srgb, var(--accent-dark) 10%, transparent),
     0 6px 14px color-mix(in srgb, var(--accent-dark) 6%, transparent);
+}
+
+.principal__bio-text {
+  display: block;
 }
 
 .principal__bio p strong {
