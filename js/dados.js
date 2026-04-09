@@ -1,6 +1,52 @@
+let idioma =
+  localStorage.getItem("idioma") ||
+  (navigator.language.startsWith("pt") ? "pt" : "en");
+
+const i18nDynamic = {
+  pt: {
+    view_modules: "Ver módulos",
+    courses_singular: "curso",
+    courses_plural: "cursos",
+    institution: "Instituição",
+    workload: "Carga horária",
+    completed_in: "Concluído em",
+    show_less: "Mostrar menos",
+    show_more: "Ver mais cursos",
+    description: "Descrição",
+    technologies: "Tecnologias utilizadas",
+    responsibilities: "Minhas responsabilidades",
+    status: "Status",
+    view_project: "Ver projeto"
+  },
+  en: {
+    view_modules: "View modules",
+    courses_singular: "course",
+    courses_plural: "courses",
+    institution: "Institution",
+    workload: "Workload",
+    completed_in: "Completed in",
+    show_less: "Show less",
+    show_more: "See more courses",
+    description: "Description",
+    technologies: "Technologies used",
+    responsibilities: "My responsibilities",
+    status: "Status",
+    view_project: "View project"
+  }
+};
+
+function t(key) {
+  const dict = i18nDynamic[idioma] || i18nDynamic.pt;
+  return dict[key] || key;
+}
+
 async function carregarDados() {
   try {
-    const resposta = await fetch('assets/data/cursos.json');
+    document.getElementById("projetos-container").innerHTML = "";
+    document.getElementById("experiencias-container").innerHTML = "";
+    document.getElementById("formacoes").innerHTML = "";
+    document.getElementById("cursosIndependentes").innerHTML = "";
+    const resposta = await fetch(`assets/data/cursos.${idioma}.json`);
     const dados = await resposta.json();
 
     const formacoes = document.getElementById('formacoes');
@@ -53,18 +99,19 @@ async function carregarDados() {
       formacaoElemento.classList.add("formacao");
 
       const qtd = Array.isArray(formacao.cursos) ? formacao.cursos.length : 0;
+      const cursosLabel = qtd === 1 ? t("courses_singular") : t("courses_plural");
 
       formacaoElemento.innerHTML = `
         <div class="formacao-top">
           <h2>${formacao.nome}</h2>
           <div class="formacao-meta">
             <span>${formacao.cargaHoraria || ""}</span>
-            <span>${qtd} curso(s)</span>
+            <span>${qtd} ${cursosLabel}</span>
           </div>
         </div>
 
         <details class="formacao-details">
-          <summary>Ver módulos</summary>
+          <summary>${t("view_modules")}</summary>
           <div class="formacao-lista"></div>
         </details>
       `;
@@ -119,9 +166,9 @@ async function carregarDados() {
     cursoElemento.innerHTML = `
             <h3>${curso.nome}</h3>
             <p>
-              Instituição: ${curso.instituicao}<br>
-              ${curso.cargaHoraria ? `Carga horária: ${curso.cargaHoraria}<br>` : ''}
-              ${curso.conclusao ? `Concluído em: ${curso.conclusao}<br>` : ''}
+              ${t("institution")}: ${curso.instituicao}<br>
+              ${curso.cargaHoraria ? `${t("workload")}: ${curso.cargaHoraria}<br>` : ''}
+              ${curso.conclusao ? `${t("completed_in")}: ${curso.conclusao}<br>` : ''}
             </p>
           `;
 
@@ -139,8 +186,8 @@ async function carregarDados() {
         btn.className = "cursos-toggle-btn";
         btn.type = "button";
         btn.textContent = mostrandoTodos
-          ? "Mostrar menos"
-          : `Ver mais cursos (${cursosOrdenados.length - LIMITE})`;
+          ? t("show_less")
+          : `${t("show_more")} (${cursosOrdenados.length - LIMITE})`;
 
         btn.addEventListener("click", () => {
           mostrandoTodos = !mostrandoTodos;
@@ -160,7 +207,7 @@ async function carregarDados() {
   }
 
   // Busca os dados dos projetos
-  fetch('assets/data/projetos.json')
+  fetch(`assets/data/projetos.${idioma}.json`)
     .then(res => res.json())
     .then(data => {
       const container = document.getElementById('projetos-container');
@@ -273,13 +320,13 @@ async function carregarDados() {
         div.innerHTML = `
           <h2>${projeto.nome}</h2>
           ${imagemHTML}
-          <p><strong>Descrição:</strong> ${projeto.descricao}</p>
-          <p><strong>Tecnologias utilizadas:</strong> ${tecnologiasHTML}</p>
-          <p><strong>Minhas responsabilidades:</strong> ${projeto.responsabilidades}</p>
-          <p><strong>Status:</strong> ${projeto.status}</p>
+          <p><strong>${t("description")}:</strong> ${projeto.descricao}</p>
+          <p><strong>${t("technologies")}:</strong> ${tecnologiasHTML}</p>
+          <p><strong>${t("responsibilities")}:</strong> ${projeto.responsabilidades}</p>
+          <p><strong>${t("status")}:</strong> ${projeto.status}</p>
           <p>
             <a href="${projeto.link}" target="_blank" rel="noopener noreferrer">
-              Ver projeto
+              ${t("view_project")}
             </a>
           </p>
           <hr>
@@ -291,7 +338,7 @@ async function carregarDados() {
     .catch(err => console.error('Erro ao carregar o JSON:', err));
 
   // Busca os dados das experiências
-  fetch('assets/data/experiencias.json')
+  fetch(`assets/data/experiencias.${idioma}.json`)
     .then(res => res.json())
     .then(data => {
       const container = document.getElementById('experiencias-container');

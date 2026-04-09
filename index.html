@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfólio - Luiza Carla</title>
+    <title data-i18n-title="site_title">Portfólio - Luiza Carla</title>
 
     <link rel="stylesheet" href="./css/styles.css" />
     <link
@@ -16,16 +16,22 @@
 
   <body>
     <nav class="navbar">
-      <button class="navbar__toggle" aria-label="Abrir menu">&#9776;</button>
-      <button class="navbar__theme" type="button" aria-pressed="false">Modo neutro</button>
+      <button class="navbar__toggle" aria-label="Abrir menu" data-i18n-aria-label="menu_toggle">&#9776;</button>
+      <div class="navbar__actions">
+        <button class="navbar__theme" type="button" aria-pressed="false" data-i18n="theme_neutral">Modo neutro</button>
+        <div class="language-switch">
+          <button class="lang-option active" data-lang="pt">PT</button>
+          <button class="lang-option" data-lang="en">EN</button>
+        </div>
+      </div>
 
       <ul class="navbar__lista">
-        <li><a href="#inicio">Início</a></li>
-        <li><a href="#habilidades">Habilidades</a></li>
-        <li><a href="#experiencias">Experiências</a></li>
-        <li><a href="#projetos">Projetos</a></li>
-        <li><a href="#cursos">Certificados</a></li>
-        <li><a href="#contato">Contato</a></li>
+        <li><a href="#inicio" data-i18n="nav_inicio">Início</a></li>
+        <li><a href="#habilidades" data-i18n="nav_habilidades">Habilidades</a></li>
+        <li><a href="#experiencias" data-i18n="nav_experiencias">Experiências</a></li>
+        <li><a href="#projetos" data-i18n="nav_projetos">Projetos</a></li>
+        <li><a href="#cursos" data-i18n="nav_cursos">Certificados</a></li>
+        <li><a href="#contato" data-i18n="nav_contato">Contato</a></li>
       </ul>
     </nav>
 
@@ -38,9 +44,9 @@
 
           <div class="principal__texto">
             <h1 class="principal__nome">Luiza Carla</h1>
-            <h2 class="principal__cargo">Desenvolvedora Full Stack</h2>
+            <h2 class="principal__cargo" data-i18n="hero_role">Desenvolvedora Full Stack</h2>
 
-            <p class="principal__intro">
+            <p class="principal__intro" data-i18n="hero_intro">
               Desenvolvendo sistemas web e APIs com foco em organização, confiabilidade e evolução contínua de software.
             </p>
 
@@ -57,14 +63,14 @@
         <div class="principal__conteudo">
           <div class="principal__bio">
             <p>
-              <span class="principal__bio-text">
+              <span class="principal__bio-text" data-i18n="bio_1">
                 Desenvolvedora formada em <strong>Análise e Desenvolvimento de Sistemas pela FATEC Praia Grande</strong>,
                 com experiência prática na construção e evolução de aplicações web.
               </span>
             </p>
 
             <p>
-              <span class="principal__bio-text">
+              <span class="principal__bio-text" data-i18n="bio_2">
                 A minha última experiência foi como <strong>Desenvolvedora Júnior no Recicla Lead CRM</strong>, onde contribuí
                 no desenvolvimento e manutenção do sistema, participando da implementação de novas funcionalidades
                 e da melhoria contínua da aplicação.
@@ -73,11 +79,12 @@
           </div>
 
           <a
+            id="download-cv"
             class="principal__cta"
             href="./assets/pdf/CurriculoLuizaCarla.pdf"
             download="CurriculoLuizaCarla.pdf"
           >
-            <button class="btn-underline">Baixar currículo</button>
+            <button class="btn-underline" data-i18n="btn_download_cv">Baixar currículo</button>
           </a>
 
         </div>
@@ -87,13 +94,13 @@
 
       <section class="container habilidades" id="habilidades">
         <header class="habilidades-header">
-          <h1>Habilidades</h1>
+          <h1 data-i18n="skills_title">Habilidades</h1>
         </header>
 
         <div class="habilidades-painel">
           <div class="habilidades-coluna tecnologias">
             <div class="habilidades-linha__cabecalho">
-              <h2 class="habilidades-titulo">Tecnologias</h2>
+              <h2 class="habilidades-titulo" data-i18n="skills_tech">Tecnologias</h2>
             </div>
             <div class="icones" aria-label="Tecnologias e ferramentas">
               <i class="devicon-html5-plain tooltip" data-tooltip="HTML5" aria-label="HTML5"></i>
@@ -124,11 +131,11 @@
 
           <div class="habilidades-coluna idiomas">
             <div class="habilidades-linha__cabecalho">
-              <h2 class="habilidades-titulo">Idiomas</h2>
+              <h2 class="habilidades-titulo" data-i18n="skills_langs">Idiomas</h2>
             </div>
             <div class="idioma-item">
-              <span class="idioma-nome">Inglês</span>
-              <span class="idioma-nivel">Intermediário / Avançado</span>
+              <span class="idioma-nome" data-i18n="lang_english">Inglês</span>
+              <span class="idioma-nivel" data-i18n="lang_level">Intermediário / Avançado</span>
               <span class="tag-tecnologia idioma-cert">TOEIC 840</span>
 
               <a
@@ -136,7 +143,7 @@
                 href="./assets/pdf/certificadoTOEIC.pdf"
                 download="certificadoTOEIC.pdf"
               >
-                Baixar certificado
+                <span data-i18n="btn_download_cert">Baixar certificado</span>
               </a>
             </div>
           </div>
@@ -146,57 +153,57 @@
       <hr class="divisor" />
 
       <section class="experiencias" id="experiencias">
-        <h1>Experiências</h1>
+        <h1 data-i18n="exp_title">Experiências</h1>
         <div id="experiencias-container"></div>
       </section>
 
       <hr class="divisor" />
       <section class="projetos" id="projetos">
-        <h1>Projetos</h1>
+        <h1 data-i18n="projects_title">Projetos</h1>
         <div id="projetos-container"></div>
       </section>
     </main>
       <hr class="divisor" />
 
       <section class="cursos" id="cursos">
-        <h1>Formações</h1>
+        <h1 data-i18n="education_title">Formações</h1>
         <div id="formacoes"></div>
 
-        <h1 id="cursoTitulo">Cursos</h1>
+        <h1 id="cursoTitulo" data-i18n="courses_title">Cursos</h1>
         <div id="cursosIndependentes"></div>
       </section>
 
       <hr class="divisor" />
       <section class="contato container" id="contato">
         <header class="contato-header">
-          <h1>Contato</h1>
-          <p>Vamos conversar?</p>
+          <h1 data-i18n="contact_title">Contato</h1>
+          <p data-i18n="contact_subtitle">Vamos conversar?</p>
         </header>
 
         <form action="https://formsubmit.co/luizacarla2004@gmail.com" method="POST" class="contato-form">
-          <input type="hidden" name="_subject" value="Novo contato do portfólio!" />
+          <input type="hidden" name="_subject" value="Novo contato do portfólio!" data-i18n-value="contact_subject" />
           <input type="hidden" name="_honey" value="" />
           <input type="hidden" name="_template" value="table" />
           <input type="hidden" name="_next" value="https://luiza-carla.github.io/obrigado.html" />
 
           <div class="contato-grid">
             <div class="contato-campo">
-              <label for="name">Nome</label>
-              <input id="name" type="text" name="name" placeholder="Nome" autocomplete="name" required />
+              <label for="name" data-i18n="label_name">Nome</label>
+              <input id="name" type="text" name="name" placeholder="Nome" autocomplete="name" required data-i18n-placeholder="placeholder_name" />
             </div>
 
             <div class="contato-campo">
-              <label for="email">E-mail</label>
-              <input id="email" type="email" name="email" placeholder="E-mail" autocomplete="email" required />
+              <label for="email" data-i18n="label_email">E-mail</label>
+              <input id="email" type="email" name="email" placeholder="E-mail" autocomplete="email" required data-i18n-placeholder="placeholder_email" />
             </div>
 
             <div class="contato-mensagem">
-              <label for="message">Mensagem</label>
-              <textarea id="message" name="message" placeholder="Mensagem" rows="6" required></textarea>
+              <label for="message" data-i18n="label_message">Mensagem</label>
+              <textarea id="message" name="message" placeholder="Mensagem" rows="6" required data-i18n-placeholder="placeholder_message"></textarea>
             </div>
           </div>
 
-          <button type="submit" class="btn-underline">Enviar mensagem</button>
+          <button type="submit" class="btn-underline" data-i18n="btn_send_message">Enviar mensagem</button>
         </form>
       </section>
 
@@ -244,10 +251,11 @@
         </div>
       </div>
 
-      <p>© 2026 Luiza Carla. Todos os direitos reservados.</p>
+      <p data-i18n="footer_rights">© 2026 Luiza Carla. Todos os direitos reservados.</p>
     </footer>
 
     <script src="./js/dados.js"></script>
+    <script src="./js/lang.js"></script>
     <script src="./js/navbar.js"></script>
   </body>
 </html>

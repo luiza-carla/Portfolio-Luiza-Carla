@@ -1,0 +1,121 @@
+{
+  "projetos": [
+    {
+      "nome": "Personal Financial Management",
+      "descricao": "Application for personal finance management, allowing users to track expenses, income, and view financial reports.",
+      "tecnologias": [
+        "CSS",
+        "JavaScript",
+        "Node.js",
+        "Express",
+        "MongoDB",
+        "Mongoose",
+        "HTML",
+        "BCrypt",
+        "Dotenv",
+        "Nodemon",
+        "FontAwesome",
+        "node-cron",
+        "JWT",
+        "CORS",
+        "ESlint",
+        "Prettier",
+        "Faker"
+      ],
+      "imagens": [
+        "assets/img/gastos-login.png",
+        "assets/img/gastos-resumo.png",
+        "assets/img/gastos-conta.png",
+        "assets/img/gastos-transacoes.png",
+        "assets/img/gastos-listadsj.png",
+        "assets/img/gastos-salario.png",
+        "assets/img/gastos-historico.png"
+      ],
+      "responsabilidades": "Full project development, including front-end, back-end, database, and integration with a local server.",
+      "status": "In progress...",
+      "link": "https://github.com/luiza-carla/gastos"
+    },
+    {
+      "nome": "Radar Praia Grande",
+      "descricao": "Radar Praia Grande is a collaborative platform where citizens of Praia Grande can report news, events, and local issues, increasing the visibility of situations that often do not receive coverage from traditional media. Developed as a Final Course Project, receiving a final grade of 10.",
+      "tecnologias": [
+        "JavaScript",
+        "Node.js",
+        "SQLite",
+        "Express",
+        "CORS",
+        "Postman",
+        "VS Code",
+        "Google Fonts",
+        "Multer",
+        "MemoryStore",
+        "Nodemon",
+        "Chalk",
+        "Redis",
+        "Dotenv",
+        "HTTPS",
+        "NPM",
+        "CSS"
+      ],
+      "imagem": "assets/img/radarpg.png",
+      "responsabilidades": "Development of the logical data model and database tables, back-end for login, registration, profile and profile editing, user session handling, front-end, and technical documentation.",
+      "status": "Completed.",
+      "link": "https://github.com/ruann-fernandess/Radar_Praia-Grande"
+    },
+    {
+      "nome": "SIGA Educational Virtual Assistant",
+      "descricao": "Project developed during classes taught by Professor Ricardo Pupo Larguesa in the Object-Oriented Programming (OOP) course. The goal was to develop a system integrated with Google's AI (Gemini) to support students who use the 'SIGA' system, helping with learning and answering questions related to the student's academic information.",
+      "tecnologias": [
+        "Apache NetBeans 22",
+        "Jakarta EE 10 Web",
+        "Maven",
+        "JDK 19",
+        "Glassfish 7.0",
+        "SQLite",
+        "Gemini 1.5 Flash",
+        "HTMLUnit",
+        "Selenium",
+        "Bootstrap 5",
+        "Google Fonts",
+        "Ajax",
+        "CSS",
+        "JavaScript"
+      ],
+      "responsabilidades": "Front-end development.",
+      "status": "Completed.",
+      "link": "https://github.com/isaquesv/assistenteVirtualEducacionalSIGA"
+    },
+    {
+      "nome": "Books API",
+      "descricao": "Project developed during Alura courses: \"creating a REST API with MongoDB and Express\" and \"handling search, filters, pagination, and errors in an API\".",
+      "tecnologias": [
+        "Node.js",
+        "Nodemon",
+        "NPM",
+        "Dotenv",
+        "JavaScript",
+        "ESlint",
+        "MongoDB",
+        "Express",
+        "Mongoose",
+        "VS Code"
+      ],
+      "responsabilidades": "The project included creating an API with database connection, table creation, CRUD operations, integration with a local server, error handling in separate files, pagination, and search filters.",
+      "status": "Completed.",
+      "link": "https://github.com/luiza-carla/Curso-Alura-Criando-API"
+    },
+    {
+      "nome": "React Native Mobile Tasks",
+      "descricao": "Tasks developed during the Mobile Devices course in the ADS program.",
+      "tecnologias": [
+        "React Native",
+        "Expo",
+        "JavaScript",
+        "Snack"
+      ],
+      "responsabilidades": "Development of 7 component-based applications using React Native.",
+      "status": "Completed.",
+      "link": "https://github.com/luiza-carla/Dispositivos-moveis"
+    }
+  ]
+}

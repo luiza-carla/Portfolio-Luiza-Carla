@@ -1,0 +1,54 @@
+{
+  "experiencias": [
+    {
+      "cargo": "Junior Python/Django Developer",
+      "empresa": "RECICLA LEAD CRM",
+      "periodo": "June 2025 - March 2026",
+      "descricao": "Worked on the evolution of a CRM using Python/Django, working with PostgreSQL and MongoDB in a Linux environment. Developed end-to-end features with a focus on security, traceability, and system organization.",
+      "destaques": [
+        "Notifications for new opportunities with real-time counters to improve lead tracking.",
+        "Permissions module (RBAC) with granular access control (view, create, edit, and delete).",
+        "File management module (CRUD) with upload, search, and filters, including audit tracking (author and timestamp).",
+        "Agile workflow using Scrum and Kanban, with Jira for organization, Git/GitHub, and Docker.",
+        "Visual redesign improving design, usability, and readability, ensuring a more intuitive interface."
+      ],
+      "tags": [
+        "Python",
+        "Django",
+        "PostgreSQL",
+        "MongoDB",
+        "Git",
+        "GitHub",
+        "Postman",
+        "Scrum",
+        "Kanban",
+        "Docker",
+        "Jira",
+        "AWS",
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "FontAwesome",
+        "Linux"
+      ]
+    },
+    {
+      "cargo": "Human Resources Intern",
+      "empresa": "Praia Grande City Hall",
+      "periodo": "August 2025 - December 2025",
+      "descricao": "Worked in HR performing administrative routines and information control, ensuring data consistency and supporting process flow between departments.",
+      "destaques": [
+        "Registration, updating, and validation of administrative processes in an internal system, ensuring accuracy and consistency.",
+        "Monitoring the physical and digital flow of processes between departments, paying attention to routing and deadlines.",
+        "Operational support for different areas, helping maintain a more organized and efficient workflow within the sector."
+      ],
+      "tags": [
+        "Organization",
+        "Attention to detail",
+        "Communication",
+        "Teamwork",
+        "Administrative routines"
+      ]
+    }
+  ]
+}

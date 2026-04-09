@@ -1,0 +1,197 @@
+{
+  "formacoes": [
+    {
+      "nome": "From Zero: Beginner in Programming",
+      "cargaHoraria": "31h",
+      "cursos": [
+        {
+          "nome": "Programming Logic: Dive into Programming with JavaScript",
+          "conclusao": "14-10-2024",
+          "cargaHoraria": "6h",
+          "instituicao": "Alura"
+        },
+        {
+          "nome": "Programming Logic: Exploring Functions and Lists",
+          "conclusao": "15-10-2024",
+          "cargaHoraria": "6h",
+          "instituicao": "Alura"
+        },
+        {
+          "nome": "Git and GitHub: Sharing and Collaborating on Projects",
+          "conclusao": "18-10-2024",
+          "cargaHoraria": "8h",
+          "instituicao": "Alura"
+        },
+        {
+          "nome": "Programming Logic: Practicing with Challenges",
+          "conclusao": "19-10-2024",
+          "cargaHoraria": "8h",
+          "instituicao": "Alura"
+        }
+      ]
+    },
+    {
+      "nome": "Learn to Program in JavaScript Focused on Back-End",
+      "cargaHoraria": "44h",
+      "cursos": [
+        {
+          "nome": "JavaScript: Using Types, Variables and Functions",
+          "conclusao": "29-10-2024",
+          "cargaHoraria": "8h",
+          "instituicao": "Alura"
+        },
+        {
+          "nome": "JavaScript: Understanding Arrays",
+          "conclusao": "25-02-2025",
+          "cargaHoraria": "8h",
+          "instituicao": "Alura"
+        },
+        {
+          "nome": "JavaScript: Understanding Objects",
+          "conclusao": "30-04-2025",
+          "cargaHoraria": "8h",
+          "instituicao": "Alura"
+        },
+        {
+          "nome": "JavaScript with Node.js: Creating Your First Library",
+          "conclusao": "01-05-2025",
+          "cargaHoraria": "10h",
+          "instituicao": "Alura"
+        },
+        {
+          "nome": "JavaScript: Object-Oriented Programming",
+          "conclusao": "02-05-2025",
+          "cargaHoraria": "8h",
+          "instituicao": "Alura"
+        }
+      ]
+    },
+    {
+      "nome": "Learn to Program in Python with Object-Oriented Programming",
+      "cargaHoraria": "25h",
+      "cursos": [
+        {
+          "nome": "Python: Create Your First Application",
+          "conclusao": "13-05-2025",
+          "cargaHoraria": "8h",
+          "instituicao": "Alura"
+        },
+        {
+          "nome": "Python: Applying Object-Oriented Programming",
+          "conclusao": "13-05-2025",
+          "cargaHoraria": "6h",
+          "instituicao": "Alura"
+        },
+        {
+          "nome": "Python: Advance in Object-Oriented Programming and Consume APIs",
+          "conclusao": "13-05-2025",
+          "cargaHoraria": "8h",
+          "instituicao": "Alura"
+        }
+      ]
+    }
+  ],
+  "cursosIndependentes": [
+    {
+      "nome": "Django: Templates and Best Practices",
+      "conclusao": "15-05-2025",
+      "cargaHoraria": "8h",
+      "instituicao": "Alura"
+    },
+    {
+      "nome": "Django: Data Persistence and Admin",
+      "conclusao": "16-05-2025",
+      "cargaHoraria": "10h",
+      "instituicao": "Alura"
+    },
+    {
+      "nome": "Node.js: Handling Search, Filters, Pagination and Errors in an API",
+      "conclusao": "08-05-2025",
+      "cargaHoraria": "10h",
+      "instituicao": "Alura"
+    },
+    {
+      "nome": "Node.js: Creating a REST API with Express and MongoDB",
+      "conclusao": "05-05-2025",
+      "cargaHoraria": "10h",
+      "instituicao": "Alura"
+    },
+    {
+      "nome": "Git and GitHub: Mastering Code Version Control",
+      "conclusao": "05-05-2025",
+      "cargaHoraria": "8h",
+      "instituicao": "Alura"
+    },
+    {
+      "nome": "HTML and CSS: Practicing HTML/CSS",
+      "conclusao": "13-05-2025",
+      "cargaHoraria": "8h",
+      "instituicao": "Alura"
+    },
+    {
+      "nome": "HTML and CSS: Development Environments, File Structure and Tags",
+      "conclusao": "12-05-2025",
+      "cargaHoraria": "8h",
+      "instituicao": "Alura"
+    },
+    {
+      "nome": "HTML and CSS: Classes, Positioning and Flexbox",
+      "conclusao": "12-05-2025",
+      "cargaHoraria": "8h",
+      "instituicao": "Alura"
+    },
+    {
+      "nome": "HTTP: Understanding the Web Under the Hood",
+      "conclusao": "02-05-2025",
+      "cargaHoraria": "10h",
+      "instituicao": "Alura"
+    },
+    {
+      "nome": "Windows Prompt: Using CMD",
+      "conclusao": "20-05-2025",
+      "cargaHoraria": "8h",
+      "instituicao": "Alura"
+    },
+    {
+      "nome": "Terminal: Learn Commands to Execute Tasks",
+      "conclusao": "01-05-2025",
+      "cargaHoraria": "10h",
+      "instituicao": "Alura"
+    },
+    {
+      "nome": "Prompt Engineering: Creating Effective Prompts for Generative AI",
+      "conclusao": "23-05-2025",
+      "cargaHoraria": "6h",
+      "instituicao": "Alura"
+    },
+    {
+      "nome": "AI: Exploring the Potential of Generative Artificial Intelligence",
+      "conclusao": "23-05-2025",
+      "cargaHoraria": "8h",
+      "instituicao": "Alura"
+    },
+    {
+      "nome": "Design and Photoshop",
+      "conclusao": "06-2020",
+      "cargaHoraria": "16h",
+      "instituicao": "Centro Paula Souza"
+    },
+    {
+      "nome": "IT Essentials: PC Hardware and Software",
+      "conclusao": "04-2023",
+      "instituicao": "Cisco"
+    },
+    {
+      "nome": "Data Engineering Fundamentals",
+      "conclusao": "09-2024",
+      "cargaHoraria": "24h",
+      "instituicao": "Data Science Academy"
+    },
+    {
+      "nome": "Microsoft Power BI for Business Intelligence and Data Science",
+      "conclusao": "19-05-2025",
+      "cargaHoraria": "72h",
+      "instituicao": "Data Science Academy"
+    }
+  ]
+}

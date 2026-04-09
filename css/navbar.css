@@ -24,14 +24,26 @@
   z-index: 1100;
 }
 
-.navbar__theme {
+.navbar__actions {
   position: absolute;
+  top: 50%;
   right: 1rem;
-  background: var(--navbar-button-bg);
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.navbar__theme,
+.language-switch {
+  background: var(--surface-elevated);
+}
+
+.navbar__theme {
   color: var(--text);
   cursor: pointer;
   border-radius: 999px;
-  border: 0px;
+  border: 0;
   padding: 0.45em 0.9em;
   font-weight: 700;
   font-size: 0.9em;
@@ -45,8 +57,8 @@
 }
 
 .navbar__theme[aria-pressed="true"] {
-  background: var(--text);
-  color: var(--text-light);
+  background: var(--surface-elevated);
+  color: var(--text);
 }
 
 .navbar__lista {
@@ -73,16 +85,23 @@
   }
 }
 
-@media (max-width: 900px) and (min-width: 801px) {
+@media (max-width: 900px) and (min-width: 860px) {
   .navbar__lista {
     padding-right: 6rem;
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 860px) {
   .navbar {
     justify-content: flex-end;
-      padding: 0.3em 0;
+    padding: 0.3em 0;
+  }
+
+  .navbar__actions {
+    position: absolute;
+    left: 0.6rem;
+    top: 50%;
+    transform: translateY(-50%);
   }
 
   .navbar__toggle {
@@ -117,9 +136,7 @@
   }
 
   .navbar__theme {
-    position: absolute;
-    left: 0.6rem;
-    right: auto;
+    position: static;
     font-size: 0.85em;
     padding: 0.4em 0.75em;
   }
@@ -155,4 +172,33 @@
 .navbar__lista li a.active {
   background-color: var(--navbar-accent);
   border-radius: 8px;
+}
+
+.language-switch {
+  display: flex;
+  background: var(--surface-elevated);
+  border-radius: 999px;
+  padding: 2px;
+  box-shadow: 0 2px 6px var(--navbar-shadow);
+}
+
+.lang-option {
+  border: none;
+  background: transparent;
+  color: var(--text);
+  padding: 0.35em 0.8em;
+  border-radius: 999px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 0.85em;
+  transition: all 0.2s ease;
+}
+
+.lang-option.active {
+  background: var(--text);
+  color: var(--text-light);
+}
+
+.lang-option:hover {
+  transform: translateY(-1px);
 }
