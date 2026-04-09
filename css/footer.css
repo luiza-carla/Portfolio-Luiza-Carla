@@ -45,3 +45,101 @@ body.theme-neutral #footer a {
   align-items: center;
   gap: 5px;
 }
+
+.contato {
+  background: var(--surface-elevated);
+  border: 1px solid var(--border-soft);
+  border-radius: 20px;
+  padding: 24px;
+  margin: 32px auto;
+  max-width: 900px;
+  box-shadow: 0 12px 25px color-mix(in srgb, var(--accent-dark) 12%, transparent);
+}
+
+.contato-header {
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+.contato-header h1 {
+  margin-bottom: 8px;
+}
+
+.contato-header p {
+  color: var(--text-muted);
+  margin: 0;
+}
+
+.contato-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.contato-grid {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: 1fr 1fr;
+  padding: 0 18px;
+}
+
+.contato-campo,
+.contato-mensagem {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.contato-campo {
+  min-width: 0;
+}
+
+.contato-campo input,
+.contato-mensagem textarea {
+  min-width: 0;
+}
+
+.contato-grid input,
+.contato-grid textarea {
+  width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 10px 14px;
+  font: inherit;
+  color: var(--text);
+  background: var(--surface);
+  box-sizing: border-box;
+  transition: border-color 150ms ease, box-shadow 150ms ease;
+}
+
+.contato-grid input:focus,
+.contato-grid textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--accent) 20%, transparent);
+}
+
+.contato-grid textarea {
+  resize: vertical;
+  min-height: 140px;
+  grid-column: span 2;
+}
+
+.contato-mensagem {
+  grid-column: 1 / -1;
+}
+
+.contato-form button {
+  align-self: center;
+}
+
+@media (max-width: 860px) {
+  .contato-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contato-grid textarea {
+    grid-column: auto;
+  }
+}
+

@@ -25,7 +25,7 @@
         <li><a href="#experiencias">Experiências</a></li>
         <li><a href="#projetos">Projetos</a></li>
         <li><a href="#cursos">Certificados</a></li>
-        <li><a href="#footer">Contato</a></li>
+        <li><a href="#contato">Contato</a></li>
       </ul>
     </nav>
 
@@ -165,8 +165,40 @@
         <h1 id="cursoTitulo">Cursos</h1>
         <div id="cursosIndependentes"></div>
       </section>
+      
+      <hr class="divisor" />
+      <section class="contato container" id="contato">
+        <header class="contato-header">
+          <h1>Contato</h1>
+          <p>Vamos conversar?</p>
+        </header>
 
+        <form action="https://formsubmit.co/luizacarla2004@gmail.com" method="POST" class="contato-form">
+          <input type="hidden" name="_subject" value="Novo contato do portfólio!" />
+          <input type="hidden" name="_honey" value="" />
+          <input type="hidden" name="_template" value="table" />
+          <input type="hidden" name="_next" value="https://luiza-carla.github.io/obrigado.html" />
 
+          <div class="contato-grid">
+            <div class="contato-campo">
+              <label for="name">Nome</label>
+              <input id="name" type="text" name="name" placeholder="Nome" autocomplete="name" required />
+            </div>
+
+            <div class="contato-campo">
+              <label for="email">E-mail</label>
+              <input id="email" type="email" name="email" placeholder="E-mail" autocomplete="email" required />
+            </div>
+
+            <div class="contato-mensagem">
+              <label for="message">Mensagem</label>
+              <textarea id="message" name="message" placeholder="Mensagem" rows="6" required></textarea>
+            </div>
+          </div>
+
+          <button type="submit" class="btn-underline">Enviar mensagem</button>
+        </form>
+      </section>
 
     <footer id="footer">
       <div class="footer-links">

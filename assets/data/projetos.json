@@ -103,6 +103,19 @@
             "responsabilidades": "O projeto incluiu a criação de uma API com conexão ao banco de dados, criação de tabelas, CRUD, integração com servidor local, tratamento de erros em arquivos separados, paginação e filtros de busca.",
             "status": "Finalizado.",
             "link": "https://github.com/luiza-carla/Curso-Alura-Criando-API"
-        }
+        },
+        {
+            "nome": "Tarefas Mobile React Native",
+            "descricao": "Tarefas realizadas durante a matéria Dispositivos Móveis do curso de ADS.",
+            "tecnologias": [
+                "React Native",
+                "Expo",
+                "JavaScript",
+                "Snack"
+            ],
+            "responsabilidades": "Desenvolvimento de 7 aplicações componentizadas com React Native.",
+            "status": "Finalizado.",
+            "link": "https://github.com/luiza-carla/Dispositivos-moveis"
+    }
     ]
 }
