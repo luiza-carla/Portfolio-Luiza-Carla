@@ -179,8 +179,8 @@
           <h1 data-i18n="contact_title">Contato</h1>
           <p data-i18n="contact_subtitle">Vamos conversar?</p>
         </header>
-
-        <form action="https://formsubmit.co/luizacarla2004@gmail.com" method="POST" class="contato-form">
+        <div id="contact-toast" class="toast toast--hidden" role="status" aria-live="polite"></div>
+        <form id="contact-form" class="contato-form">
           <input type="hidden" name="_subject" value="Novo contato do portfólio!" data-i18n-value="contact_subject" />
           <input type="hidden" name="_honey" value="" />
           <input type="hidden" name="_template" value="table" />
@@ -257,5 +257,13 @@
     <script src="./js/dados.js"></script>
     <script src="./js/lang.js"></script>
     <script src="./js/navbar.js"></script>
+    <script src="./js/email.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+    <script>
+    (function(){
+      emailjs.init("0c8-wHc5Tb11e0Rxi");
+    })();
+    </script>
   </body>
 </html>

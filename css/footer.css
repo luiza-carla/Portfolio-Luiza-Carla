@@ -133,6 +133,50 @@ body.theme-neutral #footer a {
   align-self: center;
 }
 
+.toast {
+  position: fixed;
+  left: 50%;
+  bottom: 24px;
+  z-index: 50;
+  width: min(94vw, 560px);
+  max-width: 560px;
+  padding: 16px 18px;
+  border-radius: 18px;
+  text-align: center;
+  font-weight: 600;
+  box-shadow: 0 18px 35px rgba(0, 0, 0, 0.08);
+  transition: transform 180ms ease, opacity 180ms ease, visibility 180ms ease;
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+  pointer-events: none;
+  visibility: visible;
+  box-sizing: border-box;
+}
+
+.toast--hidden {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(-50%) translateY(10px);
+}
+
+.toast--success {
+  background: linear-gradient(135deg, var(--accent), color-mix(in srgb, var(--accent) 80%, transparent));
+  color: var(--surface);
+}
+
+.toast--error {
+  background: linear-gradient(135deg, #d9534f, color-mix(in srgb, #d9534f 75%, transparent));
+  color: var(--surface);
+}
+
+body.theme-neutral .toast--success {
+  background: linear-gradient(135deg, var(--accent-dark), color-mix(in srgb, var(--accent-dark) 80%, transparent));
+}
+
+body.theme-neutral .toast--error {
+  background: linear-gradient(135deg, #c43c3c, color-mix(in srgb, #c43c3c 75%, transparent));
+}
+
 @media (max-width: 860px) {
   .contato-grid {
     grid-template-columns: 1fr;
