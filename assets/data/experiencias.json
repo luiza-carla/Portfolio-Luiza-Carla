@@ -3,13 +3,13 @@
     {
       "cargo": "Desenvolvedora Júnior Python/Django",
       "empresa": "RECICLA LEAD CRM",
-      "periodo": "Junho 2025 - Presente",
-      "descricao": "Atuo na evolução de um CRM com Python/Django, trabalhando com PostgreSQL e MongoDB em ambiente Linux. Desenvolvo funcionalidades de ponta a ponta, com foco em segurança, rastreabilidade e organização do sistema.",
+      "periodo": "Junho 2025 - Março 2026",
+      "descricao": "Atuei na evolução de um CRM com Python/Django, trabalhando com PostgreSQL e MongoDB em ambiente Linux. Desenvolvi funcionalidades de ponta a ponta, com foco em segurança, rastreabilidade e organização do sistema.",
       "destaques": [
         "Notificações de novas oportunidades com contagem em tempo real para melhorar o acompanhamento de leads.",
         "Módulo de permissões (RBAC) com controle granular de acesso (visualizar, criar, editar e excluir).",
         "Gerenciamento de arquivos (CRUD) com upload, busca e filtros, além de auditoria (autor e timestamp).",
-        "Rotina ágil com Scrum e Kanban, Jira para organização, Git/GitHub e Docker. Em produção, acompanho logs na AWS.",
+        "Rotina ágil com Scrum e Kanban, Jira para organização, Git/GitHub e Docker.",
         "Reformulação visual, trazendo melhoras de design, usabilidade e legibilidade, garantindo uma interface mais intuitiva."
       ],
       "tags": [
