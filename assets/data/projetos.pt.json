@@ -23,17 +23,41 @@
                 "Faker"
             ],
             "imagens": [
-                "assets/img/gastos-login.png",
-                "assets/img/gastos-resumo.png",
-                "assets/img/gastos-conta.png",
-                "assets/img/gastos-transacoes.png",
-                "assets/img/gastos-listadsj.png",
-                "assets/img/gastos-salario.png",
-                "assets/img/gastos-historico.png"
+                "assets/img/gastos/gastos-login.png",
+                "assets/img/gastos/gastos-resumo.png",
+                "assets/img/gastos/gastos-conta.png",
+                "assets/img/gastos/gastos-transacoes.png",
+                "assets/img/gastos/gastos-listadsj.png",
+                "assets/img/gastos/gastos-salario.png",
+                "assets/img/gastos/gastos-historico.png"
             ],
             "responsabilidades": "Desenvolvimento completo do projeto, incluindo front-end, back-end, banco de dados e integração com servidor local.",
             "status": "Em andamento...",
             "link": "https://github.com/luiza-carla/gastos"
+        },
+        {
+            "nome": "Agenda",
+            "descricao": "Aplicação web de gerenciamento de contatos com autenticação de usuários, permitindo criar, editar, excluir e visualizar registros de forma segura e organizada. O projeto foi desenvolvido como parte do curso Python 3 do básico ao avançado - com projetos reais, com foco em boas práticas de desenvolvimento web. A aplicação foi implantada na AWS utilizando EC2, com Gunicorn como servidor de aplicação e Nginx como servidor web.",
+            "tecnologias": [
+                "Python",
+                "Django",
+                "PostgreSQL",
+                "Git",
+                "GitHub",
+                "AWS",
+                "HTML",
+                "CSS",
+                "Nginx",
+                "Gunicorn"
+            ],
+            "imagens": [
+                "assets/img/agenda/auth.png",
+                "assets/img/agenda/contact.png",
+                "assets/img/agenda/contacts.png"
+            ],
+            "responsabilidades": "Desenvolvimento full stack da aplicação, incluindo modelagem do banco de dados, implementação do back-end com Django, construção da interface com HTML e CSS, configuração do ambiente de produção e deploy na AWS.",
+            "status": "Finalizado.",
+            "link": "https://github.com/luiza-carla/agenda-curso"
         },
         {
             "nome": "Radar Praia Grande",

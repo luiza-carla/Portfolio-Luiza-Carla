@@ -23,17 +23,41 @@
         "Faker"
       ],
       "imagens": [
-        "assets/img/gastos-login.png",
-        "assets/img/gastos-resumo.png",
-        "assets/img/gastos-conta.png",
-        "assets/img/gastos-transacoes.png",
-        "assets/img/gastos-listadsj.png",
-        "assets/img/gastos-salario.png",
-        "assets/img/gastos-historico.png"
+        "assets/img/gastos/gastos-login.png",
+        "assets/img/gastos/gastos-resumo.png",
+        "assets/img/gastos/gastos-conta.png",
+        "assets/img/gastos/gastos-transacoes.png",
+        "assets/img/gastos/gastos-listadsj.png",
+        "assets/img/gastos/gastos-salario.png",
+        "assets/img/gastos/gastos-historico.png"
       ],
       "responsabilidades": "Full project development, including front-end, back-end, database, and integration with a local server.",
       "status": "In progress...",
       "link": "https://github.com/luiza-carla/gastos"
+    },
+    {
+    "nome": "Agenda",
+    "descricao": "A web-based contact management application with user authentication, allowing users to create, edit, delete, and view records in a secure and organized way. The project was developed as part of the course 'Python 3 from Beginner to Advanced - with Real Projects', with a focus on web development best practices. The application was deployed on AWS using EC2, with Gunicorn as the application server and Nginx as the web server.",
+    "tecnologias": [
+        "Python",
+        "Django",
+        "PostgreSQL",
+        "Git",
+        "GitHub",
+        "AWS",
+        "HTML",
+        "CSS",
+        "Nginx",
+        "Gunicorn"
+    ],
+    "imagens": [
+        "assets/img/agenda/auth.png",
+        "assets/img/agenda/contact.png",
+        "assets/img/agenda/contacts.png"
+    ],
+    "responsibilidades": "Full-stack development of the application, including database modeling, back-end implementation with Django, front-end development using HTML and CSS, production environment setup, and deployment on AWS.",
+    "status": "Completed.",
+    "link": "https://github.com/luiza-carla/agenda-curso"
     },
     {
       "nome": "Radar Praia Grande",

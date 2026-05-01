@@ -108,9 +108,11 @@ body.theme-neutral #projetos-container .projeto {
 }
 
 .carousel img {
-  width: 100%;
-  aspect-ratio: auto;
-  object-fit: cover;
+  width: auto;
+  max-width: 100%;
+  max-height: 400px;
+  display: block;
+  margin: 0 auto;
   border-radius: 6px;
   box-shadow: 0 6px 14px color-mix(in srgb, var(--accent-dark) 12%, transparent);
 }
