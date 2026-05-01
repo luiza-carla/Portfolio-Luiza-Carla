@@ -55,7 +55,7 @@
         "assets/img/agenda/contact.png",
         "assets/img/agenda/contacts.png"
     ],
-    "responsibilidades": "Full-stack development of the application, including database modeling, back-end implementation with Django, front-end development using HTML and CSS, production environment setup, and deployment on AWS.",
+    "responsabilidades": "Full-stack development of the application, including database modeling, back-end implementation with Django, front-end development using HTML and CSS, production environment setup, and deployment on AWS.",
     "status": "Completed.",
     "link": "https://github.com/luiza-carla/agenda-curso"
     },
